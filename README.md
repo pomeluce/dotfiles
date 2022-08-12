@@ -10,12 +10,12 @@
 ~/.config/dotfiles
 |------ nvim
 |    |--- init.vim
-|	 |--- lua
-|	   |---basic.lua
-|	   |---init.lua
-|	   |---kedbindings.lua
-|	   |---plugins.lua
-|	   |---plugin-config
-|	 |--- plugin
-|------- ideavim
+|    |--- lua
+|      |---basic.lua
+|      |---init.lua
+|      |---kedbindings.lua
+|      |---plugins.lua
+|      |---plugin-config
+|    |--- plugin
+|------ ideavim
 ```
