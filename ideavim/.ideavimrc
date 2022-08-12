@@ -1,0 +1,253 @@
+"-------------------------------------------- 插件配置 -------------------------------------------------
+" 配置 surround 环绕插件
+Plug 'tpope/vim-surround'
+" 配置 nerdtree 目录树插件
+Plug 'preservim/nerdtree`
+" 配置 easymotion leader 插件
+Plug 'easymotion/vim-easymotion'
+
+"--------------------------------------- ---- 基础配置 -------------------------------------------------
+" 设置回到 normal 模式时自动切换英文输入法, 进入 insert 模式自动恢复(需要下载插件 ideavim_extension )
+set keep-english-in-normal[-and-restore-in-insert]
+" 设置与系统共享剪切板
+set clipboard+=unnamed
+" 设置大小写不敏感
+set ignorecase
+" 设置 j k 光标移动时保留的行数
+set scrolloff=30
+set sidescrolloff=30
+" 设置 history 文件记录数
+set history=100
+" 使用相对行号
+set number
+set relativenumber
+" 设置搜索时, 逐字高亮
+set incsearch
+" 高亮显示被搜索的字句
+set hlsearch
+" 开启 NERDTree 插件
+set NERDTree
+
+"--------------------------------------- 快捷键配置(非 leader ) ------------------------------------------------
+">>>>>>>>>>>>>>>>>>>>>> 窗口设置相关 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+" 设置水平分屏
+nmap sv :vs<CR>
+" 设置垂直分屏
+nmap sh :sp<CR>
+" 关闭当前窗口
+nmap sc <C-w>c
+" 关闭其他窗口
+nmap so <C-w>o
+
+" 水平增加宽度
+" nmap s. :vertical resize+20<CR>
+" 水平减少宽度
+" nmap s, :vertical resize-20<CR>
+" 垂直降低高度
+" nmap sj :res +10<CR>
+" 垂直增加高度
+" nmap sk :res -10<CR>
+
+" 设置窗口跳转
+nmap <C-h> <C-w>h
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-l> <C-w>l
+
+" 打开侧边窗口
+nmap <A-1> :NERDTreeToggle<CR>
+
+
+
+
+
+
+" >>>>>>>>>>>>>>>>>>>>>>>>>>>>> 代码跳转 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+" 跳转报错位置
+nmap ge <action>(GotoNextError)
+" 跳转测试方法
+nmap gt <action>(GotoTest)
+" 跳转上一个方法
+nmap gk <action>(MethodUp)
+" 跳转下一个方法
+nmap gj <action>(MethodDown)
+" 跳转到最后一次修改的位置
+nmap ga '.
+" 跳转声明
+nmap gd <action>(GotoDeclaration)
+" 跳转到父类方法
+nmap gs <action>(GotoSuperMethod)
+" 跳转到实现类方法
+nmap gi <action>(GotoImplementation)
+
+
+
+" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 代码注释 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+" 单航注释
+nmap cl <action>(CommentByLineComment)
+vmap cl <action>(CommentByLineComment)
+" 多行注释
+vmap cv <action>(CommentByBlockComment) \| <esc>
+nmap cv <action>(CommentByBlockComment) \| <esc>
+" 文档注释
+nmap cd <action>(FixDocComment)
+
+
+
+" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 代码光标移动 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+" 向上移动行
+nmap <C-S-k> <action>(MoveLineUp)
+vmap <C-S-k> <action>(MoveLineUp)
+" 向下移动行
+nmap <C-S-j> <action>(MoveLineDown)
+vmap <C-S-j> <action>(MoveLineDown)
+
+" >>>>>>>>>>>>>>>>>>>>>>>>>>>> V 代码连续缩进 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+" 反缩进连续
+vmap < <gv
+" 缩进连续
+vmap > >gv
+
+
+" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 其他配置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+" 设置粘贴之后不复制被粘贴的文本
+vmap p "_dp
+" 配置 esc 映射
+imap jk <esc>
+
+
+
+
+
+"----------------------------------------- 快捷键配置( leader ) -----------------------------------------------
+" >>>>>>>>>>>>>>>>>>>>>>>>>>>>> leader 配置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+" 配置 leader 键
+let mapleader=" "
+" 设置 leader 面板可见 "
+set which-key
+" 设置面板延迟
+set notimeout
+
+" >>>>>>>>>>>>>>>>>>>>>>>>>>>> 文件操作 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<️
+" 在当前文件查找单词
+let g:WhichKeyDesc_FindWord = "<leader>fw FindWord"
+nmap <leader>fw <action>(Find)
+" 打开搜索面板查找文件
+let g:WhichKeyDesc_FindFile = "<leader>ff FindFile"
+nmap <leader>ff <action>(GotoFile)
+" 从所有文件中查找文本
+let g:WhichKeyDesc_FindText = "<leader>ft FindText"
+nmap <leader>ft <action>(FindInPath)
+" 打开 action 查找面板
+let g:WhichKeyDesc_Commands = "<leader>fc Commands"
+nmap <leader>fc <action>(GotoAction)
+" 文件内容格式化
+let g:WhichKeyDesc_FileFormat = "<leader>fm FileFormat"
+nmap <leader>fm <action>(ReformatCode) \| <action>(OptimizeImports)
+" 批量替换当前文件文本内容
+let g:WhichKeyDesc_ReplaceText = "<leader>rt ReplaceText"
+nmap <leader>rt <action>(Replace)
+" 重命名 -> 任何模式
+let g:WhichKeyDesc_Rename = "<leader>rn Rename"
+map <leader>rn <action>(RenameElement)
+
+
+
+" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 显示配置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+" 展示已打开的项目列表
+let g:WhichKeyDesc_ShowOpenedProject = "<leader>sp ShowOpenedProject"
+nmap <leader>sp <action>(OpenProjectWindows)
+" 文件树中显示当前文件
+let g:WhichKeyDesc_ShowFileLocation = "<leader>sl ShowFileLocation"
+nmap <leader>sl <action>(SelectInProjectView)
+" 取消搜索高亮显示
+let g:WhichKeyDesc_NoHighlight = "<leader>nl NoHighlight"
+nmap <leader>nh :nohlsearch<CR>
+" 显示当前文件大纲
+let g:WhichKeyDesc_ShowFileStructure = "<leader>ss ShowFileStructure"
+nmap <leader>ss <action>(FileStructurePopup)
+" 显示所有书签
+let g:WhichKeyDesc_ShowBookmarks = "<leader>sb ShowBookmarks"
+nmap <leader>sb <action>(ShowBookmarks)
+" 打开当前项目文件树
+let g:WhichKeyDesc_ShowToggleExplorer = "<leader>e ToggleExplorer"
+nmap <leader>e <action>(ActivateProjectToolWindow)
+" 文档注释视图切换
+let g:WhichKeyDesc_ToggleRenderedDocPresentation = "<leader>dt ToggleRenderedDocPresentation"
+nmap <leader>dt <action>(ToggleRenderedDocPresentation)
+
+
+" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> Git 配置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+" Git 回滚已更改行
+let g:WhichKeyDesc_Git_RollbackHunk = "<leader>gr RollbackHunk"
+nmap <leader>gr :action Vcs.RollbackChangedLines<CR>
+
+
+
+
+" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 插入配置️ <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+" 在括号后插入
+let g:WhichKeyDesc_InsertAfterBrackets = "<leader>i InsertAfterBrackets"
+nmap <leader>i f(a
+" 在行尾插入分号
+let g:WhichKeyDesc_InsertSemicolon = "<leader>j InsertSemicolon"
+nmap <leader>j A;<ESC>
+
+
+
+" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 窗体配置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+" 关闭其他窗口, 最大化当前窗口
+let g:WhichKeyDesc_Windows_maximize = "<leader>wo maximize"
+nmap <leader>wo <action>(UnsplitAll) \| <action>(HideAllWindows)
+" 关闭当前窗口
+let g:WhichKeyDesc_Windows_closeActiveWindow = "<leader>wc closeActiveWindow"
+nmap <leader>wc <c-w>c
+" 关闭当前标签页
+let g:WhichKeyDesc_CloseBuffer = "<leader>c CloseBuffer"
+nmap <leader>c :q!<CR>
+" 新建项目
+let g:WhichKeyDesc_NewProject = "<leader>np NewProject"
+nmap <leader>np <action>(NewProject)
+
+
+" >>>>>>>>>>>>>>>>>>>>>>>>>>>>>> 代码操作配置 <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+" 展开所有方法
+let g:WhichKeyDesc_Zip_unZipAll = "<leader>zo unZipAll"
+nmap <leader>zo <action>(ExpandAllRegions)
+" 折叠所有方法
+let g:WhichKeyDesc_Zip_ZipAll = "<leader>zc ZipAll"
+nmap <leader>zc <action>(CollapseAllRegions)
+" 从代码中抽取方法
+let g:WhichKeyDesc_ExtractMethod = "<leader>em ExtractMethod"
+vmap <leader>em <action>(ExtractMethod)
+" 从代码中抽取常数
+let g:WhichKeyDesc_ExtractConst = "<leader>ec ExtractConst"
+vmap <leader>ec <action>(IntroduceConstant)
+" 局部变量抽取为成员变量
+let g:WhichKeyDesc_ExtractField = "<leader>ef ExtractField"
+vmap <leader>ef <action>(IntroduceField)
+" 从代码中抽取变量
+let g:WhichKeyDesc_ExtractVariable = "<leader>ev ExtractVariable"
+vmap <leader>ev <action>(IntroduceVariable)
+" 代码环绕
+let g:WhichKeyDesc_SurroundWithCode = "<leader>sw SurroundCode"
+nmap <leader>sw <action>(SurroundWith)
+vmap <leader>sw <action>(SurroundWith)
+" 代码生成
+let g:WhichKeyDesc_GenerateCode = "<leader>gc GenerateCode"
+map <leader>gc <action>(Generate)
+" 运行代码
+let g:WhichKeyDesc_RunCode = "<leader>rc RunCode"
+nmap <leader>rc <action>(RunClass)
+" 重写父类方法
+let g:WhichKeyDesc_OverrideMethod = "<leader>om OverrideMethod"
+nmap <leader>om <action>(OverrideMethods)
+" 光标位置代码高亮
+let g:WhichKeyDesc_ScopeHighlightingAction = "<leader>sh ScopeHighlightingAction"
+nmap <leader>sh <action>(Rainbow.ScopeHighlightingAction)
+" 光标区域以外代码灰暗
+let g:WhichKeyDesc_ScopeOutsideHighlightingRestrainAction = "<leader>sr ScopeOutsideHighlightingRestrainAction"
+nmap <leader>sr <action>(Rainbow.ScopeOutsideHighlightingRestrainAction)
+" 单词大小写转换
+let g:WhichKeyDesc_ToggleCase = "<leader>tc ToggleCase"
+map <leader>tc <action>(EditorToggleCase)
