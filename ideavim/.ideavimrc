@@ -203,8 +203,8 @@ nmap <leader>wo <action>(UnsplitAll) \| <action>(HideAllWindows)
 let g:WhichKeyDesc_Windows_closeActiveWindow = "<leader>wc closeActiveWindow"
 nmap <leader>wc <c-w>c
 " 关闭当前标签页
-let g:WhichKeyDesc_CloseBuffer = "<leader>c CloseBuffer"
-nmap <leader>c :q!<CR>
+let g:WhichKeyDesc_CloseCurrentBuffer = "<leader>cc CloseCurrentBuffer"
+nmap <leader>cc :q!<CR>
 " 新建项目
 let g:WhichKeyDesc_NewProject = "<leader>np NewProject"
 nmap <leader>np <action>(NewProject)
