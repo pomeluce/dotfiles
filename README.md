@@ -23,6 +23,7 @@
 │   ├── pack/                   -- 所有插件的配置目录
 │   ├── G.lua                   -- Global: 配置文件工具类
 │   ├── autocmd.lua             -- 自动配置
+│   ├── funcutil.lua            -- 函数配置
 │   ├── keymap.lua              -- 快捷键配置
 │   ├── packinit.lua            -- packer 配置
 │   └── profile.lua             -- nvim 基本环境配置
