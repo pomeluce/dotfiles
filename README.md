@@ -18,17 +18,63 @@
 
 ```
 .
+├── colors
+│   ├── github.css
+│   ├── markdown.css
+│   ├── monokai.vim
+│   └── solarized8_high.vim
+├── ftplugin
 ├── init.lua
-├── lua                         -- lua 配置目录
-│   ├── pack/                   -- 所有插件的配置目录
-│   ├── G.lua                   -- Global: 配置文件工具类
-│   ├── autocmd.lua             -- 自动配置
-│   ├── funcutil.lua            -- 函数配置
-│   ├── keymap.lua              -- 快捷键配置
-│   ├── packinit.lua            -- packer 配置
-│   └── profile.lua             -- nvim 基本环境配置
-├── colors/                     -- vim 配色
-├── snippets/                   -- 代码片段
-├── coc-settings.json           -- coc 配置
-└── README.md                   -- README
+├── lua
+│   └── user
+│       ├── core
+│       │   ├── autocmd.lua
+│       │   ├── funcutil.lua
+│       │   ├── keymap.lua
+│       │   └── profile.lua
+│       ├── lsp
+│       │   ├── config
+│       │   │   ├── cpp.lua
+│       │   │   ├── sumneko_lua.lua
+│       │   │   └── volar.lua
+│       │   ├── handlers.lua
+│       │   ├── init.lua
+│       │   ├── mason.lua
+│       │   └── null-ls.lua
+│       ├── plugins
+│       │   ├── autopairs.lua
+│       │   ├── bufferline.lua
+│       │   ├── cmp.lua
+│       │   ├── colorscheme.lua
+│       │   ├── comment.lua
+│       │   ├── copilot.lua
+│       │   ├── dashboard.lua
+│       │   ├── emmet.lua
+│       │   ├── fzf.lua
+│       │   ├── gitsigns.lua
+│       │   ├── indentline.lua
+│       │   ├── init.lua
+│       │   ├── lspsaga.lua
+│       │   ├── lualine.lua
+│       │   ├── markdown.lua
+│       │   ├── nvim-tree.lua
+│       │   ├── project.lua
+│       │   ├── symbols-outline.lua
+│       │   ├── telescope.lua
+│       │   ├── translator.lua
+│       │   ├── tree-sitter.lua
+│       │   ├── vim-dadbod.lua
+│       │   ├── vim-floaterm.lua
+│       │   ├── vim-interestingwords.lua
+│       │   ├── vim-visual-multi.lua
+│       │   └── vsnip.lua
+│       └── plugins-setup.lua
+├── plugin
+│   └── packer_compiled.lua
+├── .prettierrc.json
+├── README.md
+├── snippets
+│   ├── html.json
+│   └── vue.json
+└── .stylua.toml
 ```
