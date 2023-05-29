@@ -1,0 +1,37 @@
+# 字体配置
+font:
+  # 常规字体
+  normal:
+    family: 'JetBrainsMono Nerd Font Mono'
+    style: Regular
+  
+  # 粗体
+  bold:
+    family: 'JetBrainsMono Nerd Font Mono'
+    style: Bold
+
+  # 斜体
+  italic:
+    family: 'JetBrainsMono Nerd Font Mono'
+    style: Italic
+
+  # 斜粗体
+  bold_italic:
+    family: 'JetBrainsMono Nerd Font Mono'
+    style: Bold Italic
+
+  # 字体大小
+  size: 9.5
+
+  # 每个字符的间的字间距。"offset.y" 可以控制行距，"offset.x" 可以改变字符间距。
+  offset:
+    x: 0
+    y: 0
+
+window:
+  # 设置背景半透明
+  opacity: 0.9
+  # 启动模式
+  startup_mode: Maximized
+# 配置热部署
+live_config_reload: true

@@ -10,6 +10,7 @@ set keep-english-in-normal[-and-restore-in-insert]
 set showcmd
 set clipboard=unnamed
 set clipboard+=unnamedplus
+set clipboard+=ideaput
 set hlsearch
 set incsearch
 set ignorecase
@@ -96,8 +97,10 @@ nnoremap <leader>fp :action RecentProjectListGroup<Cr>
 nnoremap <leader>rt :action Replace<Cr>
 nnoremap <leader>rn :action RenameElement<Cr>
 nnoremap <leader>fm :action ReformatCode \| action OptimizeImports<Cr>
+nnoremap <leader><leader>fm :action ReformatWithPrettierAction<Cr>
 
 " 折叠设置
+nnoremap zz : action CollapseRegion<Cr>
 nnoremap <leader>zc :action ExpandAllRegions<Cr>
 nnoremap <leader>zz :action CollapseAllRegions<Cr>
 

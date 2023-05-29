@@ -1,4 +1,3 @@
 .idea/
 .vscode/
-nvim/cache/
-nvim/plugin/packer_compiled.lua
+unicode
