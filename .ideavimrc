@@ -120,7 +120,7 @@ nnoremap <leader>nh :nohlsearch<Cr>
 nnoremap <leader>ss :action FileStructurePopup<Cr>
 nnoremap <leader>i f(a
 nnoremap <leader>; A;<esc>
-nnoremap <leader>np :action NewProject<Cr>
+nnoremap <leader>np :action NewProjectOrModuleGroup<Cr>
 nnoremap <leader>sw :action SurroundWith<Cr>
 vnoremap <leader>sw :action SurroundWith<Cr>
 nnoremap <leader>gc :action Generate<Cr>
