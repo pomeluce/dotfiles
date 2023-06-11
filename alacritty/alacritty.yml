@@ -28,9 +28,12 @@ font:
     x: 0
     y: 0
 
+# 导入主题
+import:
+  - ~/.config/alacritty/themes/monokai_charcoal.yaml
 window:
   # 设置背景半透明
-  opacity: 0.9
+  opacity: 1
   # 启动模式
   startup_mode: Maximized
 # 配置热部署
