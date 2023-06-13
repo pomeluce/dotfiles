@@ -20,13 +20,7 @@ if [ "$TERM" = "linux" ]; then
     echo -en "\e]PFFFFFFF" #white
 fi
 
-# 终端 alias 配置
-# alias vim='nvim'
-# alias p='pnpm'
-
 source ~/.bashrc
-
-[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
 
 source ~/.config/dzs/init.zsh
 
