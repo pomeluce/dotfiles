@@ -24,6 +24,4 @@ source ~/.bashrc
 
 source ~/.config/dzs/init.zsh
 
-export DWM=/kevin/Workspace/dwm
-export DF=~/Workspace/dotfiles
 

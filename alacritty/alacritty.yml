@@ -2,22 +2,22 @@
 font:
   # 常规字体
   normal:
-    family: 'Cascadia Mono'
+    family: 'CaskaydiaCove Nerd Font Mono'
     style: Regular
 
   # 粗体
   bold:
-    family: 'Cascadia Mono'
+    family: 'CaskaydiaCove Nerd Font Mono'
     style: Bold
 
   # 斜体
   italic:
-    family: 'Cascadia Mono'
+    family: 'CaskaydiaCove Nerd Font Mono'
     style: Italic
 
   # 斜粗体
   bold_italic:
-    family: 'Cascadia Mono'
+    family: 'CaskaydiaCove Nerd Font Mono'
     style: Bold Italic
 
   # 字体大小
@@ -34,6 +34,10 @@ import:
 window:
   # 设置背景半透明
   opacity: 1
+  # 内边距
+  padding:
+    x: 10
+    y: 7
   # 启动模式
   startup_mode: Maximized
 # 配置热部署

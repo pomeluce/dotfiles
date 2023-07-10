@@ -1,0 +1,22 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+bspc monitor -d     󰎄 #     
+
+bspc config border_width        0
+bspc config window_gap          8
+
+bspc config split_ratio          0.52 # 主窗口占比
+bspc config borderless_monocle   false
+bspc config gapless_monocle      false
+bspc config focus_follows_pointer true # 焦点跟随鼠标
+
+bspc rule -a firefox desktop='^2'
+bspc rule -a TelegramDesktop desktop='^3'
+bspc rule -a QQ desktop='^4'
+bspc rule -a qqmusic desktop='^5'
+bspc rule -a Screenkey manage=off
+
+~/Workspace/dotfiles/scripts/bspwm/launch.sh restart
+
