@@ -13,17 +13,17 @@ launch_bar() {
   polybar -q main -c "$dir/$style/config.ini" &
 }
 
-if [[ "$1" == "--custom" ]]; then
-	style="custom"
+if [[ "$1" == "--colorful" ]]; then
+	style="colorful"
 	launch_bar
-elif [[ "$1" == "--shapes" ]]; then
-  style="shapes"
+elif [[ "$1" == "--unite" ]]; then
+  style="unite"
   launch_bar
 else
   cat <<- EOF
 	Usage : launch.sh --theme
 		
 	Available Themes :
-	--shapes    --custom
+	--unite    --colorful
 	EOF
 fi

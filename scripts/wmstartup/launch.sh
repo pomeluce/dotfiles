@@ -2,10 +2,8 @@
 
 # author: Mr.Jor
 # date: 2023-06-25
-# description: autostart 管理脚本
+# description: wminit 管理脚本
 
-
-# source /etc/init.d/functions
 
 # 判断参数是否合法
 if [ $# -ne 1 ];then
@@ -15,44 +13,44 @@ if [ $# -ne 1 ];then
 fi
 
 pwd_dir=$(cd $(dirname $0);pwd)
-dir=$HOME/.cache/bspwm_init
+dir=$HOME/.cache/wminit
 
 # 启动停止函数
 start() {
-  bash $pwd_dir/bspwminit.sh &
+  bash $pwd_dir/wminit.sh &
   rm -rf $dir
   mkdir -p $dir
   sleep 3
-  echo $(pgrep -f bspwminit.sh) > $dir/bspwminit.pid
+  echo $(pgrep -f wminit.sh) > $dir/wminit.pid
 }
 
 stop() {
-  kill -9 $(cat $dir/bspwminit.pid)
+  kill -9 $(cat $dir/wminit.pid)
 	rm -rf $dir
 }
 
 # 执行命令
 case $1 in
 	start)
-		if [ -ne $dir/bspwminit.pid ];then
+		if [ -ne $dir/wminit.pid ];then
       start
     fi ;;
 	stop)
-		if [ -e $dir/bspwminit.pid ];then
+		if [ -e $dir/wminit.pid ];then
 			stop
 		fi
 	;;
 	restart)
-		if [ -e $dir/bspwminit.pid ];then
+		if [ -e $dir/wminit.pid ];then
 			stop
 		fi
 		start
 	;;
 	status)
-		if [ -e $dir/bspwminit.pid ];then
-      echo "bspwminit 脚本运行中, 进程编号: $(cat $dir/bspwminit.pid)"
+		if [ -e $dir/wminit.pid ];then
+      echo "wminit 脚本运行中, 进程编号: $(cat $dir/wminit.pid)"
 		else
-			echo "bspwminit 脚本没有运行"
+			echo "wminit 脚本没有运行"
 		fi
 	;;
 	*)

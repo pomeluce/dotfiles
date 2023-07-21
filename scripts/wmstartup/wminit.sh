@@ -2,7 +2,7 @@
 
 # author: Mr.Jor
 # date: 2023-06-25
-# description: bspwm 自启动执行脚本
+# description: wm startup 自启动执行脚本
 
 pwd_dir=$(cd $(dirname $0);pwd)
 desk_pic=$HOME/Workspace/wallpapers/desktop
@@ -19,7 +19,7 @@ setting() {
   # 设置壁纸
   feh --randomize --bg-fill $desk_pic/*
   # 开启 polybar 状态栏
-  bash ~/Workspace/dotfiles/polybar/launch.sh --custom &
+  bash ~/Workspace/dotfiles/polybar/launch.sh --unite &
   # 开启 picom
   picom >>/dev/null 2>&1 &
 }
@@ -33,7 +33,7 @@ program() {
   # 开启 flameshot 截图
   flameshot &
   # 设置锁屏壁纸
-  betterlockscreen -u $lock_pic
+  # betterlockscreen -u $lock_pic
 }
 
 # 定时任务
