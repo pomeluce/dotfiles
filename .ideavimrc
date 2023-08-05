@@ -115,6 +115,7 @@ vnoremap <leader>ef :action IntroduceField<Cr>
 vnoremap <leader>ev :action IntroduceVariable<Cr>
 
 " 其他配置
+nnoremap <C-T> :action Terminal.OpenInTerminal<CR>
 nnoremap T :action SelectInProjectView<CR>
 nnoremap <leader>nh :nohlsearch<Cr>
 nnoremap <leader>ss :action FileStructurePopup<Cr>
