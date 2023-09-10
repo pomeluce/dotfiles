@@ -18,5 +18,5 @@ bspc rule -a QQ desktop='^4'
 bspc rule -a qqmusic desktop='^5'
 bspc rule -a Screenkey manage=off
 
-~/Workspace/dotfiles/scripts/wmstartup/launch.sh restart
+/wsp/dotfiles/scripts/wmstartup/launch.sh restart
 

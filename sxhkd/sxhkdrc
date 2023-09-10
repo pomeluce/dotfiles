@@ -8,7 +8,7 @@ super + Return
 
 # program launcher
 super + @space
-	bash ~/Workspace/dotfiles/scripts/callRofi.sh run
+	bash /wsp/dotfiles/scripts/callRofi.sh run
 
 # 配置文件重载
 super + Escape

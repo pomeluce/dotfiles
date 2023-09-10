@@ -12,6 +12,7 @@ mv $HOME/.config/alacritty ${backup_dir}/alacritty_${bak_uuid}.bak
 mv $HOME/.config/betterlockscreenrc ${backup_dir}/betterlockscreenrc_${bak_uuid}.bak
 mv $HOME/.config/bspwm ${backup_dir}/bspwm_${bak_uuid}.bak
 mv $HOME/.config/i3 ${backup_dir}/i3_${bak_uuid}.bak
+mv $HOME/.config/neofetch ${backup_dir}/neofetch_${bak_uuid}.bak
 mv $HOME/.config/picom ${backup_dir}/picom_${bak_uuid}.bak
 mv $HOME/.config/polybar ${backup_dir}/polybar_${bak_uuid}.bak
 mv $HOME/.config/rofi ${backup_dir}/rofi_${bak_uuid}.bak
@@ -31,6 +32,7 @@ ln -s $PWD/alacritty $HOME/.config/alacritty
 ln -s $PWD/betterlockscreen/betterlockscreenrc $HOME/.config/betterlockscreenrc
 ln -s $PWD/bspwm $HOME/.config/bspwm
 ln -s $PWD/i3 $HOME/.config/i3
+ln -s $PWD/neofetch $HOME/.config/neofetch
 ln -s $PWD/picom $HOME/.config/picom
 ln -s $PWD/polybar $HOME/.config/polybar
 ln -s $PWD/rofi $HOME/.config/rofi

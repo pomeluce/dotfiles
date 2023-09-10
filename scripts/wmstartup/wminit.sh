@@ -5,8 +5,8 @@
 # description: wm startup 自启动执行脚本
 
 pwd_dir=$(cd $(dirname $0);pwd)
-desk_pic=$HOME/Workspace/wallpapers/desktop
-lock_pic=$HOME/Workspace/wallpapers/lockscreen
+desk_pic=/wsp/wallpapers/desktop
+lock_pic=/wsp/wallpapers/lockscreen
 
 # 初始化设置
 setting() {
@@ -19,7 +19,7 @@ setting() {
   # 设置壁纸
   feh --randomize --bg-fill $desk_pic/*
   # 开启 polybar 状态栏
-  bash ~/Workspace/dotfiles/polybar/launch.sh --unite &
+  bash ~/.config/polybar/launch.sh --unite &
   # 开启 picom
   picom >>/dev/null 2>&1 &
 }
