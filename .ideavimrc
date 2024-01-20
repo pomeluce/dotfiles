@@ -32,12 +32,17 @@ let mapleader=" "
 nnoremap s <nop>
 nnoremap ; \:
 vnoremap ; \:
-inoremap jk <esc>
 nnoremap S :action SaveAll<Cr>
 nnoremap Q :q!<CR>
 vnoremap p "_dhp
 nnoremap <M-a> ggVG
 nnoremap <M-s> vi{
+
+" 插入模式下光标移动
+inoremap <M-h> <left>
+inoremap <M-j> <down>
+inoremap <M-k> <up>
+inoremap <M-l> <right>
 
 " 窗口配置
 nnoremap sv :vs<CR>

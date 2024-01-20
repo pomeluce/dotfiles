@@ -26,7 +26,6 @@ mv $HOME/.xprofile ${backup_dir}/.xprofile_${bak_uuid}.bak
 mv $HOME/.yarnrc ${backup_dir}/.yarnrc_${bak_uuid}.bak
 mv $HOME/.zshrc ${backup_dir}/.zshrc_${bak_uuid}.bak
 
-
 # 创建软链接
 ln -s $PWD/alacritty $HOME/.config/alacritty
 ln -s $PWD/betterlockscreen/betterlockscreenrc $HOME/.config/betterlockscreenrc

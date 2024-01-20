@@ -1,0 +1,45 @@
+# 导入主题
+import = [ "/home/lucas/.config/alacritty/themes/monokai_charcoal.toml" ]
+# 配置热部署
+live_config_reload = true
+
+[font]
+# 字体大小
+size = 14
+
+# 常规字体
+[font.normal]
+family = "CaskaydiaMono Nerd Font Mono"
+style = "Regular"
+
+# 粗体
+[font.bold]
+family = "CaskaydiaMono Nerd Font Mono"
+style = "Bold"
+
+# 斜体
+[font.italic]
+family = "CaskaydiaMono Nerd Font Mono"
+style = "Italic"
+
+# 斜粗体
+[font.bold_italic]
+family = "CaskaydiaMono Nerd Font Mono"
+style = "Bold Italic"
+
+
+# 每个字符的间的字间距。"offset.y" 可以控制行距，"offset.x" 可以改变字符间距。
+[font.offset]
+x = 0
+y = 0
+
+[window]
+# 设置背景半透明
+opacity = 1
+# 启动模式
+startup_mode = "Maximized"
+
+# 内边距
+[window.padding]
+x = 10
+y = 7
