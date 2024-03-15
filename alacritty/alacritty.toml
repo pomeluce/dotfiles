@@ -5,7 +5,7 @@ live_config_reload = true
 
 [font]
 # 字体大小
-size = 14
+size = 20
 
 # 常规字体
 [font.normal]

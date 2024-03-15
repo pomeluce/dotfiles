@@ -1,0 +1,20 @@
+{
+  "name": "ags",
+  "author": "pomeluce",
+  "version": "1.0.0",
+  "description": "ags configuration",
+  "keywords": [
+    "ags"
+  ],
+  "license": "GPL-3.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pomeluce/dotfiles.git"
+  },
+  "devDependencies": {
+    "@girs/accountsservice-1.0": "1.0.0-3.2.9",
+    "bun": "^1.0.30",
+    "sass": "^1.72.0",
+    "typescript": "^5.4.2"
+  }
+}
