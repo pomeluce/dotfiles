@@ -39,6 +39,7 @@ vscode 配置文件(~/.vscode/argv.json) 配置 "password-store": "gnome-libsecr
   3. 使用 dconf-editor 设置: org.gnome.desktop.interface -> gtk-theme
 
 - 安装光标主题
+
   1. 下载链接: [DeepinV20 dark cursor](https://www.pling.com/p/1422127/)
   2. 解压缩到 ~/.icons/ 目录下
   3. GTK 设置 -> dconf-editor -> org.gnome.desktop.interface -> cursor-theme, QT 跟随 Hyprland 设置(exec 或 env)
@@ -82,7 +83,6 @@ ln -s $PWD/neofetch ~/.config/neofetch
 ln -s $PWD/alacritty ~/.config/alacritty
 ln -s $PWD/fontconfig ~/.config/fontconfig
 ln -s $PWD/hypr ~/.config/hypr
-ln -s $PWD/fcitx5 ~/.local/share/fcitx5
 ln -s $PWD/dot/.gitconfig ~/.gitconfig
 ln -s $PWD/dot/.ideavimrc ~/.ideavimrc
 ln -s $PWD/dot/.npmrc ~/.npmrc
@@ -90,6 +90,26 @@ ln -s $PWD/dot/.yarnrc ~/.yarnrc
 ln -s $PWD/dot/.zshrc ~/.zshrc
 
 echo -e '\nsource $PWD/dot/.profile' >> /etc/profile
+```
+
+## fcitx5 配置
+
+1. 克隆 git 雾凇拼音词库到配置文件夹
+
+```git
+git clone https://github.com/iDvel/rime-ice.git ~/.local/share/fcitx5/rime
+```
+
+2. 执行如下命令链接自定义配置
+
+```shell
+ln -s $PWD/fcitx5/rime/default.custom.yaml ~/.local/share/fcitx5/rime/default.custom.yaml
+ln -s $PWD/fcitx5/rime/double_pinyin_flypy.custom.yaml ~/.local/share/fcitx5/rime/double_pinyin_flypy.custom.yaml
+```
+
+3. 链接主题文件
+```shell
+ln -s $PWD/fcitx5/themes ~/.local/share/fcitx5/themes
 ```
 
 ### firefox 垂直侧边栏配置
