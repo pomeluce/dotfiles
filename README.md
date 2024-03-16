@@ -87,6 +87,7 @@ ln -s $PWD/dot/.gitconfig ~/.gitconfig
 ln -s $PWD/dot/.ideavimrc ~/.ideavimrc
 ln -s $PWD/dot/.npmrc ~/.npmrc
 ln -s $PWD/dot/.yarnrc ~/.yarnrc
+ln -s $PWD/dot/.zlua ~/.zlua
 ln -s $PWD/dot/.zshrc ~/.zshrc
 
 echo -e '\nsource $PWD/dot/.profile' >> /etc/profile
