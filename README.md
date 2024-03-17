@@ -11,7 +11,7 @@
 ### hyprland
 
 ```shell
-yay -S hyprland xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-kde-agent kvantum
+yay -S hyprland xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-kde-agent kvantum accountsservice swaylock xsettingsd
 ```
 
 - 依赖说明:
@@ -40,7 +40,7 @@ vscode 配置文件(~/.vscode/argv.json) 配置 "password-store": "gnome-libsecr
 
 - 安装光标主题
 
-  1. 下载链接: [DeepinV20 dark cursor](https://www.pling.com/p/1422127/)
+  1. 下载链接: [DeepinV20 white cursor](https://www.pling.com/p/1421622/)
   2. 解压缩到 ~/.icons/ 目录下
   3. GTK 设置 -> dconf-editor -> org.gnome.desktop.interface -> cursor-theme, QT 跟随 Hyprland 设置(exec 或 env)
 
@@ -54,7 +54,7 @@ vscode 配置文件(~/.vscode/argv.json) 配置 "password-store": "gnome-libsecr
 1. 执行如下命令安装依赖
 
 ```shell
-yay -S aylurs-gtk-shell gvfs hyprpicker brightnessctl wl-clipboard wf-recorder wayshot slurp swappy pulseaudio pavucontrol gnome-bluetooth-3.0 blueman swww networkmanager network-manager-applet matugen(not aur)
+yay -S aylurs-gtk-shell gvfs hyprpicker brightnessctl wl-clipboard wf-recorder wayshot slurp swappy pulseaudio pavucontrol gnome-bluetooth-3.0 blueman swww networkmanager network-manager-applet dart-sass matugen(not aur)
 ```
 
 - 依赖说明
@@ -78,11 +78,13 @@ yay -S firefox chromium alacritty spotify neofetch fcitx5 fcitx5-rime fcitx5-chi
 ### 配置链接命令
 
 ```shell
-ln -s $PWD/ags ~/.config/ag
+ln -s $PWD/ags ~/.config/ags
 ln -s $PWD/neofetch ~/.config/neofetch
 ln -s $PWD/alacritty ~/.config/alacritty
 ln -s $PWD/fontconfig ~/.config/fontconfig
 ln -s $PWD/hypr ~/.config/hypr
+ln -s $PWD/swaylock ~/.config/swaylock
+ln -s $PWD/xsettingsd ~/.config/xsettingsd
 ln -s $PWD/dot/.gitconfig ~/.gitconfig
 ln -s $PWD/dot/.ideavimrc ~/.ideavimrc
 ln -s $PWD/dot/.npmrc ~/.npmrc

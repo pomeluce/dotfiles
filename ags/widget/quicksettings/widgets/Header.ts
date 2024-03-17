@@ -58,6 +58,11 @@ export const Header = () =>
         App.openWindow('settings-dialog');
       },
     }),
+    Widget.Button({
+      vpack: 'center',
+      child: Widget.Icon(icons.ui.lock),
+      onClicked: () => Utils.exec(options.powermenu.lockscreen.value),
+    }),
     SysButton('logout'),
     SysButton('shutdown'),
   );

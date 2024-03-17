@@ -166,6 +166,7 @@ const options = mkOptions(OPTIONS, {
     reboot: agsOption('systemctl reboot'),
     logout: agsOption('pkill Hyprland'),
     shutdown: agsOption('shutdown now'),
+    lockscreen: agsOption('swaylock -eF'),
     layout: agsOption<'line' | 'box'>('line'),
     labels: agsOption(true),
   },

@@ -83,9 +83,7 @@ export const wait = <T,>(mils: number, callback: () => T): Promise<T> => {
  * @returns 返回一个 boolean 类型的结果
  */
 export const dependencies = (...bins: string[]) => {
-  const missing = bins.filter(bin => {
-    return !(!!Utils.exec(`which ${bin}`) || !!Utils.exec(`ls ${App.configDir}/node_modules/.bin/ | grep ${bin}`));
-  });
+  const missing = bins.filter(bin => !Utils.exec(`which ${bin}`));
 
   if (missing.length > 0) console.warn('missing dependencies:', missing.join(', '));
 

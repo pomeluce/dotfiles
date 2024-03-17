@@ -11,7 +11,7 @@ export const QuickAppButton = (app: Application) =>
   Widget.Button({
     hexpand: true,
     tooltip_text: app.name,
-    on_clicked: () => {
+    onClicked: () => {
       App.closeWindow('launcher');
       launchApp(app);
     },
@@ -23,7 +23,7 @@ export const QuickAppButton = (app: Application) =>
 
 export const AppItem = (app: Application) => {
   const title = Widget.Label({
-    class_name: 'title',
+    className: 'title',
     label: app.name,
     hexpand: true,
     xalign: 0,
@@ -32,11 +32,11 @@ export const AppItem = (app: Application) => {
   });
 
   const description = Widget.Label({
-    class_name: 'description',
+    className: 'description',
     label: app.description || '',
     hexpand: true,
     wrap: true,
-    max_width_chars: 30,
+    maxWidthChars: 30,
     xalign: 0,
     justification: 'left',
     vpack: 'center',
@@ -54,12 +54,12 @@ export const AppItem = (app: Application) => {
   });
 
   return Widget.Button({
-    class_name: 'app-item',
+    className: 'app-item',
     attribute: { app },
     child: Widget.Box({
       children: [appicon, textBox],
     }),
-    on_clicked: () => {
+    onClicked: () => {
       App.closeWindow('launcher');
       launchApp(app);
     },
