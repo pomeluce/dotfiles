@@ -41,8 +41,8 @@ const Settings = () =>
         children: [Row([Volume], [SinkSelector, AppMixer]), Microhone(), Brightness()],
       }),
       Row([NetworkToggle, BluetoothToggle], [WifiSelection, BluetoothDevices]),
-      Row([DarkModeToggle]),
       Row([MicMute, DND]),
+      Row([DarkModeToggle]),
       Widget.Box({
         visible: media.as(l => l.length > 0),
         child: Media(),
