@@ -17,6 +17,7 @@ export default [
       '',
       Row({ opt: wp.dir, title: 'Wallpaper', type: 'folder' }),
       Row({ opt: wp.interval, title: 'Wallpaper Interval' }),
+      Row({ opt: wp.fps, title: 'Wallpaper Toogle Fps', max: 255 }),
       Row({ opt: at, title: 'Auto Generate Color Scheme' }),
       Row({ opt: scheme, title: 'Color Scheme', type: 'enum', enums: ['dark', 'light'] }),
       Row({ opt: blur, title: 'Blur', note: '0 to disable', max: 70 }),

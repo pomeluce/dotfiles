@@ -1,5 +1,6 @@
 import options from 'options';
 import { arrayRandom, dependencies, readdirImage, sh } from './utils';
+import hyprland from './hyprland';
 
 // this is where the gtk portal sets the wallpaper
 const WP = `/home/${Utils.USER}/.config/wallpapers`;
@@ -11,7 +12,8 @@ const wallpaper = async () => {
     const pos = await sh('hyprctl cursorpos');
     const name = arrayRandom(names);
     options.wallpaper.name.setValue(name);
-    await sh(['swww', 'img', '--transition-type', 'grow', '--transition-pos', pos.replace(' ', ''), `${prefix}${name}`]);
+    await sh(['swww', 'img', '--transition-type', 'grow', '--transition-fps', `${options.wallpaper.fps.value}`, '--transition-pos', pos.replace(' ', ''), `${prefix}${name}`]);
+    hyprland();
   }
 };
 

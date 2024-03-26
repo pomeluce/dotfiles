@@ -13,6 +13,7 @@ const options = mkOptions(OPTIONS, {
     dir: agsOption(`/home/${USER}/.config/wallpapers`, { persistent: true }),
     interval: agsOption(60 * 5),
     name: agsOption(''),
+    fps: agsOption(165),
   },
   // 主题
   theme: {
