@@ -19,6 +19,7 @@ export const substitutes = {
   'qq-symbolic': 'qchat-symbolic',
   'spotify-client-symbolic': 'org.gnome.Lollypop-spotify-symbolic',
   'spotify-symbolic': 'org.gnome.Lollypop-spotify-symbolic',
+  'steam-symbolic': 'steam-client-symbolic',
   'transmission-gtk': 'transmission',
   'typora-symbolic': 'markdown-symbolic',
   'visual-studio-code-symbolic': 'mvsc-symbolic',
