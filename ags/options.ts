@@ -145,7 +145,7 @@ const options = mkOptions(OPTIONS, {
     width: agsOption(0),
     margin: agsOption(80),
     maxItem: agsOption(6),
-    favorites: agsOption([['IDEA', 'code', 'firefox', 'telegram', 'typora', 'Spotify']]),
+    favorites: agsOption([['IDEA', 'DataGrip', 'firefox', 'telegram', 'typora', 'Spotify']]),
     sh: {
       max: agsOption(16),
     },

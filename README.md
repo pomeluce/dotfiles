@@ -11,7 +11,7 @@
 ### hyprland
 
 ```shell
-yay -S hyprland xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-kde-agent kvantum accountsservice swaylock xsettingsd
+yay -S hyprland xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-kde-agent kvantum accountsservice swaylock-effects xsettingsd
 ```
 
 - 依赖说明:
@@ -43,6 +43,22 @@ vscode 配置文件(~/.vscode/argv.json) 配置 "password-store": "gnome-libsecr
   1. 下载链接: [DeepinV20 white cursor](https://www.pling.com/p/1421622/)
   2. 解压缩到 ~/.icons/ 目录下
   3. GTK 设置 -> dconf-editor -> org.gnome.desktop.interface -> cursor-theme, QT 跟随 Hyprland 设置(exec 或 env)
+
+- sddm 主题
+
+  1. 安装如下依赖: `qt5-graphicaleffects qt5-svg qt5-quickcontrols2`;
+  2. 执行如下命令:
+
+  ```shell
+  sudo cp -r $PWD/sddm/corners /usr/share/sddm/themes/
+  ```
+
+  3. 在 /etc/sddm.conf.d/ 目录新建一个包含如下内容的 conf 文件
+
+  ```conf
+  [Theme]
+  Current=corners
+  ```
 
 - 缩放配置
   1. dconf-editor -> org.gnome.desktop.interface -> scaling-factor (界面缩放, 貌似没用)
@@ -111,6 +127,7 @@ ln -s $PWD/fcitx5/rime/double_pinyin_flypy.custom.yaml ~/.local/share/fcitx5/rim
 ```
 
 3. 链接主题文件
+
 ```shell
 ln -s $PWD/fcitx5/themes ~/.local/share/fcitx5/themes
 ```
