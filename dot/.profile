@@ -20,12 +20,8 @@ export PATH=/usr/bin:$PATH
 export MAVEN_HOME=/env/maven
 export PATH=$MAVEN_HOME/bin:$PATH
 
-# setting gradle environment
-export GRADLE_HOME=/env/gradle
-export PATH=$GRADLE_HOME/bin:$PATH
-
 # setting gradle repostiory
-export GRADLE_USER_HOME=/env/repo-gradle
+export GRADLE_USER_HOME=/env/gradle
 
 # setting golang environment
 export GOPATH=/env/golib
