@@ -46,7 +46,7 @@ vscode 配置文件(~/.vscode/argv.json) 配置 "password-store": "gnome-libsecr
 
 - sddm 主题
 
-  1. 安装如下依赖: `qt5-graphicaleffects qt5-svg qt5-quickcontrols2`;
+  1. 安装如下依赖: `qt5-graphicaleffects qt5-svg qt5-quickcontrols2 qt6-5compat qt6-declarative qt6-svg`;
   2. 执行如下命令:
 
   ```shell
