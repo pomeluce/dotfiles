@@ -28,16 +28,18 @@ class Cliphist extends Service {
             fi`).then(() => {
         this.#proc = Utils.subprocess(
           ['bash', '-c', 'wl-paste --watch bash -c \'cliphist store && echo "cliphist changed"\''],
-          _ => this.onChange(),
-          (err: any) => logError(err),
+          _ => {
+            this.#onChange();
+          },
+          err => logError(err),
         );
       });
-      this.onChange();
+      this.#onChange();
     }
   }
 
-  async onChange() {
-    this.#history = Utils.exec('cliphist list').split('\n');
+  #onChange() {
+    this.#history = Utils.exec('cliphist list').split(/\n/);
     this.emit('changed');
     this.notify('cliphist-value');
     this.emit('cliphist-changed', this.#history);
@@ -47,7 +49,7 @@ class Cliphist extends Service {
     return super.connect(event, callback);
   }
 
-  async select(selected: string | Entry<unknown>) {
+  select(selected: string | Entry<unknown>) {
     bash(`echo '${selected}' | cliphist decode | wl-copy`);
   }
 
@@ -57,5 +59,4 @@ class Cliphist extends Service {
   };
 }
 
-const cliphist = new Cliphist();
-export default cliphist;
+export default new Cliphist();
