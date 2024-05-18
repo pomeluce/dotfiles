@@ -14,10 +14,10 @@ const {
   light: {
     primary: { bg: lightActive },
   },
-  scheme,
+  scheme: { mode },
 } = options.theme;
 
-const deps = ['hyprland', spacing.id, radius.id, blur.id, width.id, shadows.id, darkActive.id, lightActive.id, scheme.id];
+const deps = ['hyprland', spacing.id, radius.id, blur.id, width.id, shadows.id, darkActive.id, lightActive.id, mode.id];
 
 export default function init() {
   options.handler(deps, setupHyprland);
@@ -25,7 +25,7 @@ export default function init() {
 }
 
 function activeBorder() {
-  const color = scheme.value === 'dark' ? darkActive.value : lightActive.value;
+  const color = mode.value === 'dark' ? darkActive.value : lightActive.value;
 
   return color.replace('#', '');
 }

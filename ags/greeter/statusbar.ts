@@ -4,7 +4,9 @@ import icons from 'lib/icons';
 import BatteryBar from 'widget/bar/buttons/BatteryBar';
 import PanelButton from 'widget/bar/PanelButton';
 
-const { scheme } = options.theme;
+const {
+  scheme: { mode },
+} = options.theme;
 const { monochrome } = options.bar.powermenu;
 
 const poweroff = PanelButton({
@@ -27,8 +29,8 @@ const date = PanelButton({
 
 const darkmode = PanelButton({
   class_name: 'darkmode',
-  child: Widget.Icon({ icon: scheme.bind().as(s => icons.color[s]) }),
-  onClicked: () => (scheme.value = scheme.value === 'dark' ? 'light' : 'dark'),
+  child: Widget.Icon({ icon: mode.bind().as(s => icons.color[s]) }),
+  onClicked: () => (mode.value = mode.value === 'dark' ? 'light' : 'dark'),
 });
 
 export default Widget.CenterBox({

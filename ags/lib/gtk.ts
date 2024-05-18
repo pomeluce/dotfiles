@@ -6,11 +6,11 @@ const settings = new Gio.Settings({
 });
 
 function gtk() {
-  const scheme = options.theme.scheme.value;
-  settings.set_string('color-scheme', `prefer-${scheme}`);
+  const { enable, mode } = options.theme.scheme;
+  if (enable.value) settings.set_string('color-scheme', `prefer-${mode}`);
 }
 
 export default function init() {
-  options.theme.scheme.connect('changed', gtk);
+  options.theme.scheme.mode.connect('changed', gtk);
   gtk();
 }

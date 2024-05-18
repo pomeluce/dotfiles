@@ -3,7 +3,6 @@ import Group from './Group';
 import Page from './Page';
 import options from 'options';
 import icons from 'lib/icons';
-import { distro } from 'lib/variables';
 
 const { wallpaper: wp, autotheme: at, font, theme, bar: b, launcher: al, overview: ov, powermenu: pm, quicksettings: qs, osd, clipboard: clip } = options;
 
@@ -19,7 +18,8 @@ export default [
       Row({ opt: wp.interval, title: 'Wallpaper Interval' }),
       Row({ opt: wp.fps, title: 'Wallpaper Toogle Fps', max: 255 }),
       Row({ opt: at, title: 'Auto Generate Color Scheme' }),
-      Row({ opt: scheme, title: 'Color Scheme', type: 'enum', enums: ['dark', 'light'] }),
+      Row({ opt: scheme.enable, title: 'Ebable GTK Scheme' }),
+      Row({ opt: scheme.mode, title: 'Color Scheme', type: 'enum', enums: ['dark', 'light'] }),
       Row({ opt: blur, title: 'Blur', note: '0 to disable', max: 70 }),
     ),
     Group(

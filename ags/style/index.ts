@@ -8,7 +8,7 @@ const { dark, light, blur, scheme, padding, spacing, radius, shadows, widget, bo
 
 const popoverPaddingMultiplier = 1.6;
 
-const t = (dark: AgsOption<any> | string, light: AgsOption<any> | string) => (scheme.value === 'dark' ? `${dark}` : `${light}`);
+const t = (dark: AgsOption<any> | string, light: AgsOption<any> | string) => (scheme.mode.value === 'dark' ? `${dark}` : `${light}`);
 
 const $ = (name: string, value: string | AgsOption<any>) => `$${name}: ${value};`;
 
@@ -22,7 +22,7 @@ const variables = () => [
   $('error-bg', t(dark.error.bg, light.error.bg)),
   $('error-fg', t(dark.error.fg, light.error.fg)),
 
-  $('scheme', scheme),
+  $('scheme', scheme.mode),
   $('padding', `${padding}pt`),
   $('spacing', `${spacing}pt`),
   $('radius', `${radius}px`),
