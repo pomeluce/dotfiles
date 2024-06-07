@@ -12,6 +12,7 @@ export const substitutes = {
   'fcitx-symbolic': 'input-keyboard-symbolic',
   'intellij-idea-ultimate-edition-symbolic': 'jetbrains-symbolic',
   'kate-symbolic': 'accessories-text-editor-symbolic',
+  'kdeconnect-symbolic': 'kde-connect-symbolic',
   'org.kde.dolphin-symbolic': 'system-file-manager-symbolic',
   'org.kde.polkit-kde-authentication-agent-1-symbolic': 'auth-face-symbolic',
   'pavucontrol-symbolic': 'audio-card-symbolic',

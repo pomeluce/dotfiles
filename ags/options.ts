@@ -48,7 +48,7 @@ const options = mkOptions(OPTIONS, {
 
     blur: agsOption(50),
     scheme: {
-      enable: agsOption(false),
+      enable: agsOption(true),
       mode: agsOption<'dark' | 'light'>('dark'),
     },
     widget: { opacity: agsOption(94) },
