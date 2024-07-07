@@ -3,6 +3,7 @@ export const substitutes = {
   'audio-headset-bluetooth': 'audio-headphones-symbolic',
   'audio-card-analog-usb': 'audio-speakers-symbolic',
   'audio-card-analog-pci': 'audio-card-symbolic',
+  'apifox-symbolic': 'api-symbolic',
   'blueberry.py': 'blueberry',
   caprine: 'facebook-messenger',
   'chromium-symbolic': 'chromium-browser-symbolic',

@@ -16,10 +16,6 @@ export PATH=$JAVA_HOME/bin:$PATH
 export PYTHON=$(which python3)
 export PATH=/usr/bin:$PATH
 
-# setting maven environment
-export MAVEN_HOME=/env/maven
-export PATH=$MAVEN_HOME/bin:$PATH
-
 # setting gradle repostiory
 export GRADLE_USER_HOME=/env/gradle
 
@@ -30,6 +26,9 @@ export GOBIN=~/.cache/go-bin
 # setting pnpm environment
 export PNPM_HOME=/env/node/pnpm/bin
 export PATH=$PNPM_HOME:$PATH
+
+# setting nvm environment
+export NVM_DIR=/env/node/nvm
 
 # setting rust environment
 export RUSTUP_HOME=/env/rust/rustup
