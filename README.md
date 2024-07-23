@@ -40,9 +40,10 @@ vscode 配置文件(~/.vscode/argv.json) 配置 "password-store": "gnome-libsecr
 
 - 安装光标主题
 
-  1. 下载链接: [DeepinV20 white cursor](https://www.pling.com/p/1421622/)
+  1. 下载链接: [DeepinV20 white cursor](https://www.pling.com/p/1421622/), [ice-cursor](https://github.com/ful1e5/Bibata_Cursor)
   2. 解压缩到 ~/.icons/ 目录下
   3. GTK 设置 -> dconf-editor -> org.gnome.desktop.interface -> cursor-theme, QT 跟随 Hyprland 设置(exec 或 env)
+  4. envs.conf 设置 HYPRCURSOR_THEME, XCURSOR_THEME 为 ice-cursors
 
 - sddm 主题
 
