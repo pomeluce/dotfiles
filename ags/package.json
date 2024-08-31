@@ -12,8 +12,8 @@
     "url": "git+https://github.com/pomeluce/dotfiles.git"
   },
   "devDependencies": {
-    "@girs/accountsservice-1.0": "1.0.0-4.0.0-beta.11",
-    "bun": "^1.1.20",
+    "@girs/accountsservice-1.0": "1.0.0-4.0.0-beta.14",
+    "bun": "^1.1.26",
     "typescript": "^5.5.4"
   }
 }

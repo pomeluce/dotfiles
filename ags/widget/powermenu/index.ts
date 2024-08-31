@@ -36,7 +36,13 @@ export default () =>
       children: layout.bind().as(layout => {
         switch (layout) {
           case 'line':
-            return [SysButton('shutdown', 'Shutdown'), SysButton('logout', 'Log Out'), SysButton('reboot', 'Reboot'), SysButton('sleep', 'Sleep')];
+            return [
+              SysButton('shutdown', 'Shutdown'),
+              SysButton('logout', 'Log Out'),
+              SysButton('reboot', 'Reboot'),
+              SysButton('sleep', 'Sleep'),
+              SysButton('hibernate', 'Hibernate'),
+            ];
           case 'box':
             return [
               Widget.Box({ vertical: true }, SysButton('shutdown', 'Shutdown'), SysButton('logout', 'Log Out')),

@@ -1,8 +1,8 @@
 import options from 'options';
 
-const { sleep, reboot, logout, shutdown, lockscreen } = options.powermenu;
+const { hibernate, sleep, reboot, logout, shutdown, lockscreen } = options.powermenu;
 
-export type Action = 'sleep' | 'reboot' | 'logout' | 'shutdown' | 'lockscreen';
+export type Action = 'hibernate' | 'sleep' | 'reboot' | 'logout' | 'shutdown' | 'lockscreen';
 
 class PowerMenu extends Service {
   static {
@@ -28,6 +28,7 @@ class PowerMenu extends Service {
 
   action(action: Action) {
     [this.#cmd, this.#title] = {
+      hibernate: [hibernate.value, 'Hibernate'],
       sleep: [sleep.value, 'Sleep'],
       reboot: [reboot.value, 'Reboot'],
       logout: [logout.value, 'Log Out'],

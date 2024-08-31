@@ -24,5 +24,6 @@ source ~/.bashrc
 
 source ~/.config/dzs/init.zsh
 
-source /usr/share/nvm/init-nvm.sh
-
+if [ "$(whence -w nvm)" != "*function*" ]; then
+  source /usr/share/nvm/init-nvm.sh
+fi

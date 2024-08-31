@@ -6,7 +6,8 @@ Plug 'terryma/vim-multiple-cursors'
 
 " 基础配置
 " 设置回到 normal 模式时自动切换英文输入法, 进入 insert 模式自动恢复(需要下载插件 ideavim_extension )
-set keep-english-in-normal[-and-restore-in-insert]
+let rime_ascii = 1
+set keep-english-in-normal-and-restore-in-insert
 set showcmd
 set clipboard=unnamed
 set clipboard+=unnamedplus
@@ -101,7 +102,7 @@ nnoremap <leader>fp :action RecentProjectListGroup<Cr>
 " 重命名 格式化
 nnoremap <leader>rt :action Replace<Cr>
 nnoremap <leader>rn :action RenameElement<Cr>
-nnoremap <leader>fm :action ReformatCode \| action OptimizeImports<Cr>
+nnoremap <leader>fm :action ReformatCode<Cr>\:action OptimizeImports<Cr>
 nnoremap <leader><leader>fm :action ReformatWithPrettierAction<Cr>
 
 " 折叠设置

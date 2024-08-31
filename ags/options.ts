@@ -166,6 +166,7 @@ const options = mkOptions(OPTIONS, {
   },
 
   powermenu: {
+    hibernate: agsOption('systemctl hibernate'),
     sleep: agsOption('systemctl suspend'),
     reboot: agsOption('systemctl reboot'),
     logout: agsOption('pkill Hyprland'),
