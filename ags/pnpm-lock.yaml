@@ -9,168 +9,157 @@ importers:
   .:
     devDependencies:
       '@girs/accountsservice-1.0':
-        specifier: 1.0.0-4.0.0-beta.14
-        version: 1.0.0-4.0.0-beta.14
+        specifier: 1.0.0-4.0.0-beta.15
+        version: 1.0.0-4.0.0-beta.15
       bun:
-        specifier: ^1.1.26
-        version: 1.1.26
+        specifier: ^1.1.27
+        version: 1.1.27
       typescript:
-        specifier: ^5.5.4
-        version: 5.5.4
+        specifier: ^5.6.2
+        version: 5.6.2
 
 packages:
 
-  '@girs/accountsservice-1.0@1.0.0-4.0.0-beta.14':
-    resolution: {integrity: sha512-SSmkaueQXF7O82aOJJu/XSmWy9dsO/YhcG7PmZNHbLXzLG1p7g7mpLLEHpeijijDQi2IzUdAvD+nAmHtNBNpug==}
+  '@girs/accountsservice-1.0@1.0.0-4.0.0-beta.15':
+    resolution: {integrity: sha512-8vlSxQrCC9wShWXIJe50YGikJdPh8mT7nxpSiAKHOVS4Yx1pjWcWFdeLdMN2O2KHm7d5vq9nwpF93vaMJ/nzSQ==}
 
-  '@girs/cairo-1.0@1.0.0-4.0.0-beta.14':
-    resolution: {integrity: sha512-WCk/3h3Opsh4xyOe/mNw7VGgJQsD7q54IK3e0W9C/INLp6A98gqe6ooA2AAWTmtLGwUjW0vMNOUBVb3A/sEIiA==}
+  '@girs/cairo-1.0@1.0.0-4.0.0-beta.15':
+    resolution: {integrity: sha512-5AAKPp4REjlvE0YMgZrs7rJudBKoM/jzbUyym3amnhkb1Th2L/S/iANX7X0/dYhtVoajZlo7edDHzUXxSJNe/Q==}
 
-  '@girs/gio-2.0@2.80.3-4.0.0-beta.14':
-    resolution: {integrity: sha512-ZPcUYDJOTf1z1xN0nGGZEgUzAGl6ZxTeJFH5nTaILmnYpnHR50EG+5YzGi+PUwQzuafMYj6KkHXh9HW4723ctw==}
+  '@girs/gio-2.0@2.80.3-4.0.0-beta.15':
+    resolution: {integrity: sha512-KxfB+pkmXeFzA/5MBCy+U2/lOLDrA4ct/oVf9mt3iwzJ+xthUNQq/GyN6krIzM+mWwD/itTDUa+f2nEvRHskrg==}
 
-  '@girs/gjs@4.0.0-beta.14':
-    resolution: {integrity: sha512-80uV5SGGN7JxXWV3BRlJRSQ2eoOYZvJqJ5/507XXMhGBMOnxv4PIZcmTYNsEBqpWSr8n9mtCuNFxdRuikbpnUg==}
+  '@girs/gjs@4.0.0-beta.15':
+    resolution: {integrity: sha512-Oa95oCD8PV0AVbOgVSon3qQ2v0kFuVgLz2t6OoJLiHW5JspXx4Juc8c+11rEZ7O/0RVi3/DqYmM0OUCBEe1RSg==}
 
-  '@girs/glib-2.0@2.80.3-4.0.0-beta.14':
-    resolution: {integrity: sha512-RCXtrsYjRXhPHfT0DVAG5T2ns+KjyJzpNxhECyr1C1nGq6tCnyGHrtIJ8NrVOA19yDKs7HVKRE1rROBrLglRDw==}
+  '@girs/glib-2.0@2.80.3-4.0.0-beta.15':
+    resolution: {integrity: sha512-v9UJ83i+zFnicPsjYhw54Q55DVQ6oqfmef4EKXvsfjKYZF7WiaUWVp/dGAIUzanR0FGbdme6myZRJvYZp9EHcA==}
 
-  '@girs/gmodule-2.0@2.0.0-4.0.0-beta.14':
-    resolution: {integrity: sha512-0V/KhUK92rsGcYaxXMVDsx82x8U/E+t5G2NiaqmTreMPaJhAnaYgFTJg1KsZpTGJKH1mvnLusbW0apQcAxcB5Q==}
+  '@girs/gobject-2.0@2.80.3-4.0.0-beta.15':
+    resolution: {integrity: sha512-/t1B/aaEMEa/MCIeBc69RQBI+b0kdUyY27FWIPNoG8QOXB4DNe07O9N3p1w7+QDmqw8dkLJMFexfFwdQ+5LC9w==}
 
-  '@girs/gobject-2.0@2.80.3-4.0.0-beta.14':
-    resolution: {integrity: sha512-2yJcCmf0vGG1hHI286C6opegSO03fPeg4t3pRbc2fl3u5cx+lLKRvbA85ZzL8qpFicxRLrkWjaQEWcV8y+3zfA==}
-
-  '@oven/bun-darwin-aarch64@1.1.26':
-    resolution: {integrity: sha512-E8/3i0RIvsIWS+kyeIlbwBh+4qB5DsQIfcO6xr4p3t7tEzvRWnrFkJrbJthru/eB1UsVV9PJ/hsxTrp3m3za4A==}
+  '@oven/bun-darwin-aarch64@1.1.27':
+    resolution: {integrity: sha512-h5Mf2+AESEtHHGRdSDQgDU7TY2vMPMeAuwkf/XPMDpaS+EoIUFayj1CXShB25gT16uw/ww/Pl3LaN0sN0tcWhQ==}
     cpu: [arm64]
     os: [darwin]
 
-  '@oven/bun-darwin-x64-baseline@1.1.26':
-    resolution: {integrity: sha512-36HQlQfbrwP//xOS5VFN9AR/iH6BDQo3y8j5282DmRO+h6jylwlg+2+Sfz+1uXDOLDQWCbnNv3Mpl8+Ltso6cQ==}
+  '@oven/bun-darwin-x64-baseline@1.1.27':
+    resolution: {integrity: sha512-Ld+FBW3VUzGOI9QhsQKnaiYinGcOQg83NpagoeyMASozFJEMyDEr/jxA5KxoSEJRChQrGZowq/7IfoPIcJZIUA==}
     cpu: [x64]
     os: [darwin]
 
-  '@oven/bun-darwin-x64@1.1.26':
-    resolution: {integrity: sha512-ENRAAGBr2zh0VfETZXqcNPO3ZnnKDX3U6E/oWY+J70uWa9dJqRlRaj1oLB63AGoYJBNdhEcsSmTAk7toCJ+PGQ==}
+  '@oven/bun-darwin-x64@1.1.27':
+    resolution: {integrity: sha512-l+uAcE0kh4+c2VUwKvSpsHFQbzR2eLxGKhONa4AJBNVW4UXIpSdH12Qj9fG4Xqgq7s26zs32jPsl2C2NQsmRag==}
     cpu: [x64]
     os: [darwin]
 
-  '@oven/bun-linux-aarch64@1.1.26':
-    resolution: {integrity: sha512-MqE/ClaEMW6B5i5UIYJnHbadWLt6QQQHV3NBlXd78Mhx1OiZY0YmARQmAItPUp9mxIEgGuA2QyrKvgGD3pzWPQ==}
+  '@oven/bun-linux-aarch64@1.1.27':
+    resolution: {integrity: sha512-4oaNlx07SFxhO26Lm2cfRjozEQX/qRoWFhnz+EFLlGPUPLB2cNmXCVMtmXJep0u4Jub5pGK9yISwNT1voZ6KMg==}
     cpu: [arm64]
     os: [linux]
 
-  '@oven/bun-linux-x64-baseline@1.1.26':
-    resolution: {integrity: sha512-jQeSLodwfQu5pG529jYG73VSFq26hdrTspxo9E/1B1WvwKrs2Vtz3w32zv+JWH+gvZqc28A/yK6pAmzQMiscNg==}
+  '@oven/bun-linux-x64-baseline@1.1.27':
+    resolution: {integrity: sha512-495DOwgzpr/0ta/AaSRYb7EJeAEAf38cBOUO6oJzCxT5NdWRbZeAo5bmqcrBke1AexnKPA7RUN9Z5+t1TvqjtQ==}
     cpu: [x64]
     os: [linux]
 
-  '@oven/bun-linux-x64@1.1.26':
-    resolution: {integrity: sha512-sD/ZegJpnBg93qsKsiGnJgTROc68CWONwZpvtL65cBROLBqKb965ofhPUaM5oV8HckfaTDmT37cks59hG+tHvw==}
+  '@oven/bun-linux-x64@1.1.27':
+    resolution: {integrity: sha512-ktplW245+ke0GIKdBEzZisZ4mwAqdPYmW3RzhDPGB7193jVmaAE1YVUscrWkTAdfl6YMGb99IXThrhcXSddeAw==}
     cpu: [x64]
     os: [linux]
 
-  '@oven/bun-windows-x64-baseline@1.1.26':
-    resolution: {integrity: sha512-qb593xu9WIKBCHd47z7ZaZTC9h8r4T6qDbBV/XGLhxdZEJb24ePWdhW8WoHxa9hsATio9SByozqwblXb2tJncw==}
+  '@oven/bun-windows-x64-baseline@1.1.27':
+    resolution: {integrity: sha512-Qfn80kb9eDZaecCVVVxFpNfuHvo7h4yQlh278u9Vs0vSrHTYG4dxoH4SWkZSzHa44ZwKRpa1TmMfDVhX/HE+mA==}
     cpu: [x64]
     os: [win32]
 
-  '@oven/bun-windows-x64@1.1.26':
-    resolution: {integrity: sha512-EkyW6JYnZPFxD9XsdEDqFxVCnWnAoyacUAiOEUYAiz8LsnbHLMlOfbdw7KYzvm7UPFoEkUZKD78eSdpg6q6c+Q==}
+  '@oven/bun-windows-x64@1.1.27':
+    resolution: {integrity: sha512-LIZRqlyLpMEkmbsA+d/GmQnEdJzMGlFRlVtdQnyjTskW+uMv+lBHmWu7CkdcCCVPtf6wRDYgdkjpQOAw1wle5g==}
     cpu: [x64]
     os: [win32]
 
-  bun@1.1.26:
-    resolution: {integrity: sha512-dWSewAqE7sVbYmflJxgG47dW4vmsbar7VAnQ4ao45y3ulr3n7CwdsMLFnzd28jhPRtF+rsaVK2y4OLIkP3OD4A==}
+  bun@1.1.27:
+    resolution: {integrity: sha512-FLnMaOuVVuhjPIfmlRtAE42B2x+oSWO6jW8MZ/Ss179qokN//nzIhuj/07bdA016U6d11HyLvvGb6eaH0HKhBQ==}
     cpu: [arm64, x64]
     os: [darwin, linux, win32]
     hasBin: true
 
-  typescript@5.5.4:
-    resolution: {integrity: sha512-Mtq29sKDAEYP7aljRgtPOpTvOfbwRWlS6dPRzwjdE+C0R4brX/GUyhHSecbHMFLNBLcJIPt9nl9yG5TZ1weH+Q==}
+  typescript@5.6.2:
+    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
 snapshots:
 
-  '@girs/accountsservice-1.0@1.0.0-4.0.0-beta.14':
+  '@girs/accountsservice-1.0@1.0.0-4.0.0-beta.15':
     dependencies:
-      '@girs/gio-2.0': 2.80.3-4.0.0-beta.14
-      '@girs/gjs': 4.0.0-beta.14
-      '@girs/glib-2.0': 2.80.3-4.0.0-beta.14
-      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.14
-      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.14
+      '@girs/gio-2.0': 2.80.3-4.0.0-beta.15
+      '@girs/gjs': 4.0.0-beta.15
+      '@girs/glib-2.0': 2.80.3-4.0.0-beta.15
+      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.15
 
-  '@girs/cairo-1.0@1.0.0-4.0.0-beta.14':
+  '@girs/cairo-1.0@1.0.0-4.0.0-beta.15':
     dependencies:
-      '@girs/gjs': 4.0.0-beta.14
-      '@girs/glib-2.0': 2.80.3-4.0.0-beta.14
-      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.14
+      '@girs/gjs': 4.0.0-beta.15
+      '@girs/glib-2.0': 2.80.3-4.0.0-beta.15
+      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.15
 
-  '@girs/gio-2.0@2.80.3-4.0.0-beta.14':
+  '@girs/gio-2.0@2.80.3-4.0.0-beta.15':
     dependencies:
-      '@girs/gjs': 4.0.0-beta.14
-      '@girs/glib-2.0': 2.80.3-4.0.0-beta.14
-      '@girs/gmodule-2.0': 2.0.0-4.0.0-beta.14
-      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.14
+      '@girs/gjs': 4.0.0-beta.15
+      '@girs/glib-2.0': 2.80.3-4.0.0-beta.15
+      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.15
 
-  '@girs/gjs@4.0.0-beta.14':
+  '@girs/gjs@4.0.0-beta.15':
     dependencies:
-      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.14
-      '@girs/gio-2.0': 2.80.3-4.0.0-beta.14
-      '@girs/glib-2.0': 2.80.3-4.0.0-beta.14
-      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.14
+      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.15
+      '@girs/gio-2.0': 2.80.3-4.0.0-beta.15
+      '@girs/glib-2.0': 2.80.3-4.0.0-beta.15
+      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.15
 
-  '@girs/glib-2.0@2.80.3-4.0.0-beta.14':
+  '@girs/glib-2.0@2.80.3-4.0.0-beta.15':
     dependencies:
-      '@girs/gjs': 4.0.0-beta.14
-      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.14
+      '@girs/gjs': 4.0.0-beta.15
+      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.15
 
-  '@girs/gmodule-2.0@2.0.0-4.0.0-beta.14':
+  '@girs/gobject-2.0@2.80.3-4.0.0-beta.15':
     dependencies:
-      '@girs/gjs': 4.0.0-beta.14
-      '@girs/glib-2.0': 2.80.3-4.0.0-beta.14
-      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.14
+      '@girs/gjs': 4.0.0-beta.15
+      '@girs/glib-2.0': 2.80.3-4.0.0-beta.15
 
-  '@girs/gobject-2.0@2.80.3-4.0.0-beta.14':
-    dependencies:
-      '@girs/gjs': 4.0.0-beta.14
-      '@girs/glib-2.0': 2.80.3-4.0.0-beta.14
-
-  '@oven/bun-darwin-aarch64@1.1.26':
+  '@oven/bun-darwin-aarch64@1.1.27':
     optional: true
 
-  '@oven/bun-darwin-x64-baseline@1.1.26':
+  '@oven/bun-darwin-x64-baseline@1.1.27':
     optional: true
 
-  '@oven/bun-darwin-x64@1.1.26':
+  '@oven/bun-darwin-x64@1.1.27':
     optional: true
 
-  '@oven/bun-linux-aarch64@1.1.26':
+  '@oven/bun-linux-aarch64@1.1.27':
     optional: true
 
-  '@oven/bun-linux-x64-baseline@1.1.26':
+  '@oven/bun-linux-x64-baseline@1.1.27':
     optional: true
 
-  '@oven/bun-linux-x64@1.1.26':
+  '@oven/bun-linux-x64@1.1.27':
     optional: true
 
-  '@oven/bun-windows-x64-baseline@1.1.26':
+  '@oven/bun-windows-x64-baseline@1.1.27':
     optional: true
 
-  '@oven/bun-windows-x64@1.1.26':
+  '@oven/bun-windows-x64@1.1.27':
     optional: true
 
-  bun@1.1.26:
+  bun@1.1.27:
     optionalDependencies:
-      '@oven/bun-darwin-aarch64': 1.1.26
-      '@oven/bun-darwin-x64': 1.1.26
-      '@oven/bun-darwin-x64-baseline': 1.1.26
-      '@oven/bun-linux-aarch64': 1.1.26
-      '@oven/bun-linux-x64': 1.1.26
-      '@oven/bun-linux-x64-baseline': 1.1.26
-      '@oven/bun-windows-x64': 1.1.26
-      '@oven/bun-windows-x64-baseline': 1.1.26
+      '@oven/bun-darwin-aarch64': 1.1.27
+      '@oven/bun-darwin-x64': 1.1.27
+      '@oven/bun-darwin-x64-baseline': 1.1.27
+      '@oven/bun-linux-aarch64': 1.1.27
+      '@oven/bun-linux-x64': 1.1.27
+      '@oven/bun-linux-x64-baseline': 1.1.27
+      '@oven/bun-windows-x64': 1.1.27
+      '@oven/bun-windows-x64-baseline': 1.1.27
 
-  typescript@5.5.4: {}
+  typescript@5.6.2: {}

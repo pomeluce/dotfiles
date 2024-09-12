@@ -41,5 +41,5 @@ startup_mode = "Maximized"
 
 # 内边距
 [window.padding]
-x = 10
-y = 7
+x = 50
+y = 25

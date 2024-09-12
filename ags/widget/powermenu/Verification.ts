@@ -39,7 +39,10 @@ export default () =>
             }),
             Widget.Button({
               child: Widget.Label('Yes'),
-              onClicked: () => Utils.exec(powermenu.cmd),
+              onClicked: () => {
+                Utils.exec(powermenu.cmd);
+                App.toggleWindow('verification');
+              },
             }),
           ],
         }),
