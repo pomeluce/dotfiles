@@ -1,4 +1,5 @@
 # 导入主题
+[general]
 import = [ "/home/lucas/.config/alacritty/themes/monokai_charcoal.toml" ]
 # 配置热部署
 live_config_reload = true
@@ -41,5 +42,5 @@ startup_mode = "Maximized"
 
 # 内边距
 [window.padding]
-x = 50
-y = 25
+x = 30
+y = 10
