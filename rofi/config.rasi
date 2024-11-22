@@ -8,5 +8,5 @@ configuration {
   show-icons: true;
   drun-display-format: "{icon} {name}";
   window-format: "{icon} {t}";
-  icon-theme: "Tela";
+  icon-theme: "Tela-circle";
 }
