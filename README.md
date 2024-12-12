@@ -96,11 +96,13 @@ yay -S firefox chromium alacritty spotify neofetch fcitx5 fcitx5-rime fcitx5-chi
 
 ```shell
 ln -s $PWD/ags ~/.config/ags
-ln -s $PWD/neofetch ~/.config/neofetch
 ln -s $PWD/alacritty ~/.config/alacritty
+ln -s $PWD/fastetch ~/.config/fastfetch
 ln -s $PWD/fontconfig ~/.config/fontconfig
 ln -s $PWD/hypr ~/.config/hypr
+ln -s $PWD/neofetch ~/.config/neofetch
 ln -s $PWD/swaylock ~/.config/swaylock
+ln -s $PWD/wezterm ~/.config/wezterm
 ln -s $PWD/xsettingsd ~/.config/xsettingsd
 ln -s $PWD/dot/.gitconfig ~/.gitconfig
 ln -s $PWD/dot/.ideavimrc ~/.ideavimrc

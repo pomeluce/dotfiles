@@ -14,15 +14,15 @@ launch_bar() {
 }
 
 if [[ "$1" == "--colorful" ]]; then
-	style="colorful"
-	launch_bar
+  style="colorful"
+  launch_bar
 elif [[ "$1" == "--unite" ]]; then
   style="unite"
   launch_bar
 else
-  cat <<- EOF
+  cat <<-EOF
 	Usage : launch.sh --theme
-		
+
 	Available Themes :
 	--unite    --colorful
 	EOF

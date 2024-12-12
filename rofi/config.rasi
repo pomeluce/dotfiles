@@ -1,6 +1,6 @@
 configuration {
   modi: "drun,filebrowser,run,ssh";
-  display-drun: "";
+  display-drun: "";
   display-run: "";
   display-filebrowser: "";
   display-window: "";

@@ -1,15 +1,20 @@
 {
+  "$schema": "https://json.schemastore.org/tsconfig",
   "compilerOptions": {
-    "target": "ES2022",
-    "module": "ES2022",
-    "lib": ["ES2022"],
-    "allowJs": true,
-    "checkJs": true,
+    "experimentalDecorators": true,
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM", "DOM.Iterable"],
     "strict": true,
     "noImplicitAny": false,
-    "moduleResolution": "nodenext",
+    "moduleResolution": "bundler",
     "baseUrl": ".",
-    "typeRoots": ["./types", "./node_modules/@girs"],
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "jsx": "react-jsx",
+    "jsxImportSource": "/usr/share/astal/gjs/gtk3",
+    "paths": {
+      "astal": ["/usr/share/astal/gjs"],
+      "astal/*": ["/usr/share/astal/gjs/*"]
+    }
   }
 }

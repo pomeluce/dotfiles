@@ -8,158 +8,17 @@ importers:
 
   .:
     devDependencies:
-      '@girs/accountsservice-1.0':
-        specifier: 1.0.0-4.0.0-beta.15
-        version: 1.0.0-4.0.0-beta.15
-      bun:
-        specifier: ^1.1.27
-        version: 1.1.27
       typescript:
-        specifier: ^5.6.2
-        version: 5.6.2
+        specifier: ^5.6.3
+        version: 5.6.3
 
 packages:
 
-  '@girs/accountsservice-1.0@1.0.0-4.0.0-beta.15':
-    resolution: {integrity: sha512-8vlSxQrCC9wShWXIJe50YGikJdPh8mT7nxpSiAKHOVS4Yx1pjWcWFdeLdMN2O2KHm7d5vq9nwpF93vaMJ/nzSQ==}
-
-  '@girs/cairo-1.0@1.0.0-4.0.0-beta.15':
-    resolution: {integrity: sha512-5AAKPp4REjlvE0YMgZrs7rJudBKoM/jzbUyym3amnhkb1Th2L/S/iANX7X0/dYhtVoajZlo7edDHzUXxSJNe/Q==}
-
-  '@girs/gio-2.0@2.80.3-4.0.0-beta.15':
-    resolution: {integrity: sha512-KxfB+pkmXeFzA/5MBCy+U2/lOLDrA4ct/oVf9mt3iwzJ+xthUNQq/GyN6krIzM+mWwD/itTDUa+f2nEvRHskrg==}
-
-  '@girs/gjs@4.0.0-beta.15':
-    resolution: {integrity: sha512-Oa95oCD8PV0AVbOgVSon3qQ2v0kFuVgLz2t6OoJLiHW5JspXx4Juc8c+11rEZ7O/0RVi3/DqYmM0OUCBEe1RSg==}
-
-  '@girs/glib-2.0@2.80.3-4.0.0-beta.15':
-    resolution: {integrity: sha512-v9UJ83i+zFnicPsjYhw54Q55DVQ6oqfmef4EKXvsfjKYZF7WiaUWVp/dGAIUzanR0FGbdme6myZRJvYZp9EHcA==}
-
-  '@girs/gobject-2.0@2.80.3-4.0.0-beta.15':
-    resolution: {integrity: sha512-/t1B/aaEMEa/MCIeBc69RQBI+b0kdUyY27FWIPNoG8QOXB4DNe07O9N3p1w7+QDmqw8dkLJMFexfFwdQ+5LC9w==}
-
-  '@oven/bun-darwin-aarch64@1.1.27':
-    resolution: {integrity: sha512-h5Mf2+AESEtHHGRdSDQgDU7TY2vMPMeAuwkf/XPMDpaS+EoIUFayj1CXShB25gT16uw/ww/Pl3LaN0sN0tcWhQ==}
-    cpu: [arm64]
-    os: [darwin]
-
-  '@oven/bun-darwin-x64-baseline@1.1.27':
-    resolution: {integrity: sha512-Ld+FBW3VUzGOI9QhsQKnaiYinGcOQg83NpagoeyMASozFJEMyDEr/jxA5KxoSEJRChQrGZowq/7IfoPIcJZIUA==}
-    cpu: [x64]
-    os: [darwin]
-
-  '@oven/bun-darwin-x64@1.1.27':
-    resolution: {integrity: sha512-l+uAcE0kh4+c2VUwKvSpsHFQbzR2eLxGKhONa4AJBNVW4UXIpSdH12Qj9fG4Xqgq7s26zs32jPsl2C2NQsmRag==}
-    cpu: [x64]
-    os: [darwin]
-
-  '@oven/bun-linux-aarch64@1.1.27':
-    resolution: {integrity: sha512-4oaNlx07SFxhO26Lm2cfRjozEQX/qRoWFhnz+EFLlGPUPLB2cNmXCVMtmXJep0u4Jub5pGK9yISwNT1voZ6KMg==}
-    cpu: [arm64]
-    os: [linux]
-
-  '@oven/bun-linux-x64-baseline@1.1.27':
-    resolution: {integrity: sha512-495DOwgzpr/0ta/AaSRYb7EJeAEAf38cBOUO6oJzCxT5NdWRbZeAo5bmqcrBke1AexnKPA7RUN9Z5+t1TvqjtQ==}
-    cpu: [x64]
-    os: [linux]
-
-  '@oven/bun-linux-x64@1.1.27':
-    resolution: {integrity: sha512-ktplW245+ke0GIKdBEzZisZ4mwAqdPYmW3RzhDPGB7193jVmaAE1YVUscrWkTAdfl6YMGb99IXThrhcXSddeAw==}
-    cpu: [x64]
-    os: [linux]
-
-  '@oven/bun-windows-x64-baseline@1.1.27':
-    resolution: {integrity: sha512-Qfn80kb9eDZaecCVVVxFpNfuHvo7h4yQlh278u9Vs0vSrHTYG4dxoH4SWkZSzHa44ZwKRpa1TmMfDVhX/HE+mA==}
-    cpu: [x64]
-    os: [win32]
-
-  '@oven/bun-windows-x64@1.1.27':
-    resolution: {integrity: sha512-LIZRqlyLpMEkmbsA+d/GmQnEdJzMGlFRlVtdQnyjTskW+uMv+lBHmWu7CkdcCCVPtf6wRDYgdkjpQOAw1wle5g==}
-    cpu: [x64]
-    os: [win32]
-
-  bun@1.1.27:
-    resolution: {integrity: sha512-FLnMaOuVVuhjPIfmlRtAE42B2x+oSWO6jW8MZ/Ss179qokN//nzIhuj/07bdA016U6d11HyLvvGb6eaH0HKhBQ==}
-    cpu: [arm64, x64]
-    os: [darwin, linux, win32]
-    hasBin: true
-
-  typescript@5.6.2:
-    resolution: {integrity: sha512-NW8ByodCSNCwZeghjN3o+JX5OFH0Ojg6sadjEKY4huZ52TqbJTJnDo5+Tw98lSy63NZvi4n+ez5m2u5d4PkZyw==}
+  typescript@5.6.3:
+    resolution: {integrity: sha512-hjcS1mhfuyi4WW8IWtjP7brDrG2cuDZukyrYrSauoXGNgx0S7zceP07adYkJycEr56BOUTNPzbInooiN3fn1qw==}
     engines: {node: '>=14.17'}
     hasBin: true
 
 snapshots:
 
-  '@girs/accountsservice-1.0@1.0.0-4.0.0-beta.15':
-    dependencies:
-      '@girs/gio-2.0': 2.80.3-4.0.0-beta.15
-      '@girs/gjs': 4.0.0-beta.15
-      '@girs/glib-2.0': 2.80.3-4.0.0-beta.15
-      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.15
-
-  '@girs/cairo-1.0@1.0.0-4.0.0-beta.15':
-    dependencies:
-      '@girs/gjs': 4.0.0-beta.15
-      '@girs/glib-2.0': 2.80.3-4.0.0-beta.15
-      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.15
-
-  '@girs/gio-2.0@2.80.3-4.0.0-beta.15':
-    dependencies:
-      '@girs/gjs': 4.0.0-beta.15
-      '@girs/glib-2.0': 2.80.3-4.0.0-beta.15
-      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.15
-
-  '@girs/gjs@4.0.0-beta.15':
-    dependencies:
-      '@girs/cairo-1.0': 1.0.0-4.0.0-beta.15
-      '@girs/gio-2.0': 2.80.3-4.0.0-beta.15
-      '@girs/glib-2.0': 2.80.3-4.0.0-beta.15
-      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.15
-
-  '@girs/glib-2.0@2.80.3-4.0.0-beta.15':
-    dependencies:
-      '@girs/gjs': 4.0.0-beta.15
-      '@girs/gobject-2.0': 2.80.3-4.0.0-beta.15
-
-  '@girs/gobject-2.0@2.80.3-4.0.0-beta.15':
-    dependencies:
-      '@girs/gjs': 4.0.0-beta.15
-      '@girs/glib-2.0': 2.80.3-4.0.0-beta.15
-
-  '@oven/bun-darwin-aarch64@1.1.27':
-    optional: true
-
-  '@oven/bun-darwin-x64-baseline@1.1.27':
-    optional: true
-
-  '@oven/bun-darwin-x64@1.1.27':
-    optional: true
-
-  '@oven/bun-linux-aarch64@1.1.27':
-    optional: true
-
-  '@oven/bun-linux-x64-baseline@1.1.27':
-    optional: true
-
-  '@oven/bun-linux-x64@1.1.27':
-    optional: true
-
-  '@oven/bun-windows-x64-baseline@1.1.27':
-    optional: true
-
-  '@oven/bun-windows-x64@1.1.27':
-    optional: true
-
-  bun@1.1.27:
-    optionalDependencies:
-      '@oven/bun-darwin-aarch64': 1.1.27
-      '@oven/bun-darwin-x64': 1.1.27
-      '@oven/bun-darwin-x64-baseline': 1.1.27
-      '@oven/bun-linux-aarch64': 1.1.27
-      '@oven/bun-linux-x64': 1.1.27
-      '@oven/bun-linux-x64-baseline': 1.1.27
-      '@oven/bun-windows-x64': 1.1.27
-      '@oven/bun-windows-x64-baseline': 1.1.27
-
-  typescript@5.6.2: {}
+  typescript@5.6.3: {}
