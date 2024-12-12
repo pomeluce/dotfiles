@@ -89,18 +89,16 @@ yay -S aylurs-gtk-shell gvfs hyprpicker brightnessctl wl-clipboard wf-recorder w
 ### 常用软件
 
 ```shell
-yay -S firefox chromium alacritty spotify neofetch fcitx5 fcitx5-rime fcitx5-chinese-addons fcitx5-configtool telegram-dekstop typora visual-studio-code-bin intellij-idea-ultimate-edition linuxqq dolphin
+yay -S firefox chromium wezterm-git spotify neofetch fcitx5 fcitx5-rime fcitx5-chinese-addons fcitx5-configtool telegram-dekstop typora visual-studio-code-bin intellij-idea-ultimate-edition linuxqq dolphin
 ```
 
 ### 配置链接命令
 
 ```shell
 ln -s $PWD/ags ~/.config/ags
-ln -s $PWD/alacritty ~/.config/alacritty
 ln -s $PWD/fastetch ~/.config/fastfetch
 ln -s $PWD/fontconfig ~/.config/fontconfig
 ln -s $PWD/hypr ~/.config/hypr
-ln -s $PWD/neofetch ~/.config/neofetch
 ln -s $PWD/swaylock ~/.config/swaylock
 ln -s $PWD/wezterm ~/.config/wezterm
 ln -s $PWD/xsettingsd ~/.config/xsettingsd
