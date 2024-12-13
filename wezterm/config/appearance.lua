@@ -5,8 +5,8 @@ return {
   -- 帧率配置
   animation_fps = platform.is_linux and 165 or 60,
   max_fps = platform.is_linux and 165 or 60,
-  front_end = 'WebGpu',
-  webgpu_power_preference = 'HighPerformance',
+  -- front_end = 'WebGpu',
+  -- webgpu_power_preference = 'HighPerformance',
 
   -- color schema
   colors = colors,

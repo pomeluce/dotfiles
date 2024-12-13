@@ -2,7 +2,7 @@ return {
   -- behaviours
   automatically_reload_config = true,
   check_for_updates = false,
-  exit_behavior = 'CloseOnCleanExit',
+  exit_behavior = 'Close',
   status_update_interval = 1000,
   canonicalize_pasted_newlines = 'LineFeed',
 
