@@ -20,6 +20,9 @@ if [ "$TERM" = "linux" ]; then
   echo -en "\e]PFFFFFFF" #white
 fi
 
-source ~/.bashrc
+case $- in
+  *i*) ;;  # 交互式 shell，继续执行
+  *) return ;;  # 非交互式 shell，退出
+esac
 
 source ~/.config/dzs/init.zsh
