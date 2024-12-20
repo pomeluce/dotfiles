@@ -1,5 +1,7 @@
 local builder = require('config.builder')
 
+require('events.startup').setup()
+
 return builder
   :init()
   :append(require('config.appearance'))
