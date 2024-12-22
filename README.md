@@ -11,7 +11,7 @@
 ### hyprland
 
 ```shell
-yay -S hyprland xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-kde-agent kvantum accountsservice swaylock-effects xsettingsd
+yay -S hyprland xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-kde-agent kvantum accountsservice swaylock-effects xsettingsd fprintd
 ```
 
 - 依赖说明:
@@ -23,6 +23,7 @@ yay -S hyprland xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome
   5. cliphist: wayland 剪切依赖
   6. gnome-keyring: 保存登录信息
   7. polkit-kde-agent: 权限认证组件
+  8. fprintd: [指纹认证组件](https://wiki.archlinuxcn.org/zh-sg/Fprint)
 
 - wayland 下 vscode 登录信息配置 gnome-keyring:
 
