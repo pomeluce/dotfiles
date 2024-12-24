@@ -48,19 +48,21 @@ vscode 配置文件(~/.vscode/argv.json) 配置 "password-store": "gnome-libsecr
 
 - sddm 主题
 
-  1. 安装如下依赖: `qt5-graphicaleffects qt5-svg qt5-quickcontrols2 qt6-5compat qt6-declarative qt6-svg`;
+  1. 下载链接: [sddm-astronaut-theme](https://github.com/Keyitdev/sddm-astronaut-theme)
   2. 执行如下命令:
 
   ```shell
-  sudo cp -r $PWD/sddm/corners /usr/share/sddm/themes/
+  sudo git clone https://github.com/keyitdev/sddm-astronaut-theme.git /usr/share/sddm/themes/sddm-astronaut-theme
   ```
 
-  3. 在 /etc/sddm.conf.d/ 目录新建一个包含如下内容的 conf 文件
+  3. 在 /etc/sddm.conf.d/ 目录新建一个包含如下内容的 theme.conf 文件
 
   ```conf
   [Theme]
-  Current=corners
+  Current=sddm-astronaut-theme
   ```
+
+  4. 主题依赖见仓库 README
 
 - 缩放配置
   1. dconf-editor -> org.gnome.desktop.interface -> scaling-factor (界面缩放, 貌似没用)
