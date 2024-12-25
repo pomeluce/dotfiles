@@ -105,6 +105,7 @@ ln -s $PWD/hypr ~/.config/hypr
 ln -s $PWD/swaylock ~/.config/swaylock
 ln -s $PWD/wezterm ~/.config/wezterm
 ln -s $PWD/xsettingsd ~/.config/xsettingsd
+ln -s $PWD/version-fox/config.yaml ~/.version-fox/config.yaml
 ln -s $PWD/dot/.gitconfig ~/.gitconfig
 ln -s $PWD/dot/.ideavimrc ~/.ideavimrc
 ln -s $PWD/dot/.npmrc ~/.npmrc
