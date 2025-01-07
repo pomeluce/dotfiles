@@ -6,7 +6,7 @@ return {
     { label = ' Zsh', args = { 'zsh' } },
     { label = ' Bash', args = { 'bash' } },
   } or {
-    { label = ' PowerShell v7', args = { 'pwsh' } },
+    { label = ' PowerShell v7', args = { 'pwsh', '-NoLogo' } },
     { label = ' PowerShell v1', args = { 'powershell' } },
     { label = ' Cmd', args = { 'cmd' } },
     { label = ' GitBash', args = { 'C:\\User\\lucas\\scoop\\app\\Git\\current\\bash.exe' } },
