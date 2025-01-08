@@ -1,12 +1,40 @@
-![dotfile](https://readme-typing-svg.demolab.com/?font=Fira+Code&size=30&pause=1000&color=000000&vCenter=true&width=435&height=45&lines=Dotfiles)
+# Dotfile
 
----
-
-## Dotfile 备份管理
-
-- dotfile 文件备份管理, 备份 ags alacritty hyprland ideavim zsh 等常用软件的配置文件
+> 管理 ags alacritty hyprland ideavim zsh 等常用软件的配置文件
 
 ## 配置
+
+### 系统环境
+
+- 开发常用环境, rustup 安装后执行 `rustup default stable` 安装稳定版 rust 环境
+
+```shell
+yay -S gcc make rustup nodejs npm pnpm yarn typescript go lua nvim zulu-21-bin maven gradle git wget curl
+```
+
+- 字体, [苹方字体](https://github.com/xMuu/arch-kde-fontconfig)
+
+```shell
+yay -S ttf-cascadia-mono-nerd adobe-source-han-serif-cn-fonts wqy-zenhei noto-fonts-cjk noto-fonts-emoji noto-fonts-extra
+```
+
+- 解压缩工具
+
+```shell
+yay -S p7zip unrar unarchiver lzop lrzip unzip
+```
+
+- nvim 依赖
+
+```shell
+yay -S python-pynvim the_silver_searcher fd bat ripgrep unzip luarocks
+```
+
+- zsh 环境依赖
+
+```shell
+yay -S fd eza bat fzf ueberzug lsd git lua
+```
 
 ### hyprland
 
@@ -74,7 +102,7 @@ vscode 配置文件(~/.vscode/argv.json) 配置 "password-store": "gnome-libsecr
 1. 执行如下命令安装依赖
 
 ```shell
-yay -S aylurs-gtk-shell gvfs hyprpicker brightnessctl wl-clipboard wf-recorder wayshot slurp swappy pulseaudio pavucontrol gnome-bluetooth-3.0 blueman swww networkmanager network-manager-applet dart-sass matugen(not aur)
+yay -S aylurs-gtk-shell libastal-io-git libastal-git hyprpicker brightnessctl wl-clipboard wf-recorder wayshot slurp swappy pulseaudio pavucontrol gnome-bluetooth-3.0 blueman swww networkmanager network-manager-applet matugen-bin
 ```
 
 - 依赖说明
@@ -88,6 +116,7 @@ yay -S aylurs-gtk-shell gvfs hyprpicker brightnessctl wl-clipboard wf-recorder w
   8. blueman: 蓝牙
   9. swww: 图片壁纸
   10. networkmanager network-manager-applet: 网络管理
+  11. matugen-bin: 主题配色生成
 
 ### 常用软件
 
