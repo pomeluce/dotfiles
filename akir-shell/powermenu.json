@@ -1,0 +1,11 @@
+{
+  "layout": "1x6",
+  "labels": true,
+  "iconSize": 6,
+  "hibernate": "systemctl hibernate",
+  "sleep": "systemctl suspend",
+  "reboot": "systemctl reboot",
+  "logout": "hyprctl dispatch exit",
+  "shutdown": "shutdown now",
+  "lockscreen": "swaylock -eF"
+}

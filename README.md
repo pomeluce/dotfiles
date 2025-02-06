@@ -1,6 +1,6 @@
 # Dotfile
 
-> 管理 ags alacritty hyprland ideavim zsh 等常用软件的配置文件
+> 管理 akir-shell alacritty hyprland ideavim zsh 等常用软件的配置文件
 
 ## 配置
 
@@ -39,7 +39,7 @@ yay -S fd eza bat fzf ueberzug lsd git lua
 ### hyprland
 
 ```shell
-yay -S hyprland xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-kde-agent kvantum accountsservice swaylock-effects xsettingsd fprintd
+yay -S hyprland xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-gnome kvantum swaylock-effects xsettingsd fprintd
 ```
 
 - 依赖说明:
@@ -50,7 +50,7 @@ yay -S hyprland xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome
   4. pipewire wireplumber: 屏幕共享依赖
   5. cliphist: wayland 剪切依赖
   6. gnome-keyring: 保存登录信息
-  7. polkit-kde-agent: 权限认证组件
+  7. polkit-gnome: 权限认证组件
   8. fprintd: [指纹认证组件](https://wiki.archlinuxcn.org/zh-sg/Fprint)
 
 - wayland 下 vscode 登录信息配置 gnome-keyring:
@@ -64,7 +64,7 @@ vscode 配置文件(~/.vscode/argv.json) 配置 "password-store": "gnome-libsecr
 - GTK 主题
 
   1. 下载连接: [WhiteSur GTK Theme](https://www.pling.com/p/1403328/)
-  2. 解压锁放到 ~/.themes/ 目录下
+  2. 解压锁放到 `/usr/share/themes/` 或 `~/.themes/` 目录下
   3. 使用 dconf-editor 设置: org.gnome.desktop.interface -> gtk-theme
 
 - 安装光标主题
@@ -93,11 +93,18 @@ vscode 配置文件(~/.vscode/argv.json) 配置 "password-store": "gnome-libsecr
   4. 主题依赖见仓库 README
 
 - 缩放配置
+
   1. dconf-editor -> org.gnome.desktop.interface -> scaling-factor (界面缩放, 貌似没用)
   2. dconf-editor -> org.gnome.desktop.interface -> text-scaling-factor (字体缩放, 1.5)
   3. Fcitx 输入法 dpi: fcitx5-configtool -> Addons -> Classic User Interface -> Use Per Scrren DPI ✔ , Force Font DPI on Wayland 144
 
-### ags
+- NIVDIA 配置
+
+  1.  设置双显卡为独显输出模式
+  2.  安装显卡驱动
+  3.  配置参考: [Hyprland#NVIDIA](https://wiki.hyprland.org/Nvidia/)
+
+### astal
 
 1. 执行如下命令安装依赖
 
@@ -106,7 +113,7 @@ yay -S aylurs-gtk-shell libastal-io-git libastal-git hyprpicker brightnessctl wl
 ```
 
 - 依赖说明
-  1. aylurs-gtk-shell: ags bar
+  1. aylurs-gtk-shell: ags 脚手架
   2. hyprpicker: 拾色器
   3. brightnessctl: 亮度调节
   4. wl-clipboard, wl-recorder, wayshot, slurp, swappy: 剪切录屏
@@ -121,7 +128,7 @@ yay -S aylurs-gtk-shell libastal-io-git libastal-git hyprpicker brightnessctl wl
 ### 常用软件
 
 ```shell
-yay -S firefox chromium wezterm-git spotify neofetch fcitx5 fcitx5-rime fcitx5-chinese-addons fcitx5-configtool telegram-dekstop typora visual-studio-code-bin intellij-idea-ultimate-edition linuxqq dolphin
+yay -S firefox chromium wezterm-git spotify neofetch fcitx5 fcitx5-rime fcitx5-chinese-addons fcitx5-configtool telegram-dekstop typora visual-studio-code-bin intellij-idea-ultimate-edition linuxqq nautilus
 ```
 
 ### 配置链接命令

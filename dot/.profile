@@ -14,7 +14,6 @@ export PATH=$JAVA_HOME/bin:$PATH
 
 # setting python environment
 export PYTHON=$(which python3)
-export PATH=/usr/bin:$PATH
 
 # setting gradle repostiory
 export GRADLE_USER_HOME=/env/gradle
@@ -33,3 +32,6 @@ export NVM_DIR=/env/node/nvm
 # setting rust environment
 export RUSTUP_HOME=/env/rust/rustup
 export CARGO_HOME=/env/rust/cargo
+
+# setting user bin environment
+export PATH=~/.local/bin:$PATH
