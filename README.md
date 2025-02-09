@@ -39,7 +39,7 @@ yay -S fd eza bat fzf ueberzug lsd git lua
 ### hyprland
 
 ```shell
-yay -S hyprland xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-gnome kvantum swaylock-effects xsettingsd fprintd
+yay -S hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-gnome kvantum swaylock-effects xsettingsd fprintd
 ```
 
 - 依赖说明:
@@ -109,26 +109,25 @@ vscode 配置文件(~/.vscode/argv.json) 配置 "password-store": "gnome-libsecr
 1. 执行如下命令安装依赖
 
 ```shell
-yay -S aylurs-gtk-shell libastal-io-git libastal-git hyprpicker brightnessctl wl-clipboard wf-recorder wayshot slurp swappy pulseaudio pavucontrol gnome-bluetooth-3.0 blueman swww networkmanager network-manager-applet matugen-bin
+yay -S aylurs-gtk-shell libastal-io-git libastal-git hyprpicker brightnessctl wl-clipboard wf-recorder wayshot slurp swappy pipewire wireplumber gnome-control-center gnome-calendar swww networkmanager matugen-bin
 ```
 
 - 依赖说明
-  1. aylurs-gtk-shell: ags 脚手架
+  1. aylurs-gtk-shell libastal-io-git libastal-git: ags 脚手架 astal 程序
   2. hyprpicker: 拾色器
   3. brightnessctl: 亮度调节
   4. wl-clipboard, wl-recorder, wayshot, slurp, swappy: 剪切录屏
-  5. pulseaudio: 音量调节
-  6. pavucontrol: 音量调节面板
-  7. gnome-bluetooth-3.0: 蓝牙
-  8. blueman: 蓝牙
-  9. swww: 图片壁纸
-  10. networkmanager network-manager-applet: 网络管理
-  11. matugen-bin: 主题配色生成
+  5. pipewire wireplumber: 音频依赖
+  6. gnome-control-center: gnome 控制中心
+  7. gnome-calendar: 日历
+  8. swww: 图片壁纸
+  9. networkmanager: 网络管理
+  10. matugen-bin: 主题配色生成
 
 ### 常用软件
 
 ```shell
-yay -S firefox chromium wezterm-git spotify neofetch fcitx5 fcitx5-rime fcitx5-chinese-addons fcitx5-configtool telegram-dekstop typora visual-studio-code-bin intellij-idea-ultimate-edition linuxqq nautilus
+yay -S firefox chromium wezterm-git spotify neofetch fcitx5 fcitx5-rime fcitx5-chinese-addons fcitx5-configtool telegram-dekstop typora visual-studio-code-bin intellij-idea-ultimate-edition linuxqq nautilus loupe
 ```
 
 ### 配置链接命令
