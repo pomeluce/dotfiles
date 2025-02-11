@@ -39,19 +39,24 @@ yay -S fd eza bat fzf ueberzug lsd git lua
 ### hyprland
 
 ```shell
-yay -S hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-gnome kvantum swaylock-effects xsettingsd fprintd
+yay -S hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-gnome kvantum swaylock-effects xsettingsd fprintd playctrl
 ```
 
 - 依赖说明:
 
-  1. xorg-xrdb: 调整 xwayland 缩放
-  2. dconf dconf-editor: 配置 GTK 程序
-  3. qt6ct: 配置 QT 程序
+  1. hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk: hyprland 依赖
+  2. xorg-xrdb: 调整 xwayland 缩放
+  3. dconf dconf-editor: 配置 GTK 程序
   4. pipewire wireplumber: 屏幕共享依赖
   5. cliphist: wayland 剪切依赖
   6. gnome-keyring: 保存登录信息
-  7. polkit-gnome: 权限认证组件
-  8. fprintd: [指纹认证组件](https://wiki.archlinuxcn.org/zh-sg/Fprint)
+  7. qt6ct: 配置 QT 程序
+  8. kvantum: QT 主题配置
+  9. swaylock-effects: 锁屏程序
+  10. xsettingsd: xwayland 设置
+  11. polkit-gnome: 权限认证组件
+  12. fprintd: [指纹认证组件](https://wiki.archlinuxcn.org/zh-sg/Fprint)
+  13. playctrl: 音量调节
 
 - wayland 下 vscode 登录信息配置 gnome-keyring:
 
@@ -109,15 +114,15 @@ vscode 配置文件(~/.vscode/argv.json) 配置 "password-store": "gnome-libsecr
 1. 执行如下命令安装依赖
 
 ```shell
-yay -S aylurs-gtk-shell libastal-io-git libastal-git hyprpicker brightnessctl wl-clipboard wf-recorder wayshot slurp swappy pipewire wireplumber gnome-control-center gnome-calendar swww networkmanager matugen-bin
+yay -S aylurs-gtk-shell libastal-io-git libastal-git hyprpicker brightnessctl wl-clipboard wf-recorder wayshot slurp swappy cliphist pipewire wireplumber gnome-control-center gnome-calendar swww networkmanager matugen-bin
 ```
 
 - 依赖说明
   1. aylurs-gtk-shell libastal-io-git libastal-git: ags 脚手架 astal 程序
   2. hyprpicker: 拾色器
   3. brightnessctl: 亮度调节
-  4. wl-clipboard, wl-recorder, wayshot, slurp, swappy: 剪切录屏
-  5. pipewire wireplumber: 音频依赖
+  4. wl-clipboard wl-recorder wayshot slurp swappy cliphist: 剪切截屏录屏
+  5. pipewire wireplumber: 音频屏幕共享依赖
   6. gnome-control-center: gnome 控制中心
   7. gnome-calendar: 日历
   8. swww: 图片壁纸
@@ -133,19 +138,16 @@ yay -S firefox chromium wezterm-git spotify neofetch fcitx5 fcitx5-rime fcitx5-c
 ### 配置链接命令
 
 ```shell
-ln -s $PWD/ags ~/.config/ags
 ln -s $PWD/fastetch ~/.config/fastfetch
 ln -s $PWD/fontconfig ~/.config/fontconfig
 ln -s $PWD/hypr ~/.config/hypr
 ln -s $PWD/swaylock ~/.config/swaylock
 ln -s $PWD/wezterm ~/.config/wezterm
 ln -s $PWD/xsettingsd ~/.config/xsettingsd
-ln -s $PWD/version-fox/config.yaml ~/.version-fox/config.yaml
 ln -s $PWD/dot/.gitconfig ~/.gitconfig
 ln -s $PWD/dot/.ideavimrc ~/.ideavimrc
 ln -s $PWD/dot/.npmrc ~/.npmrc
 ln -s $PWD/dot/.yarnrc ~/.yarnrc
-ln -s $PWD/dot/.zlua ~/.zlua
 ln -s $PWD/dot/.zshrc ~/.zshrc
 
 echo -e '\nsource $PWD/dot/.profile' >> /etc/profile
