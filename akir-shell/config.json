@@ -30,11 +30,8 @@
   "theme.hyprland.gapsMultiplier": 1.7,
   "theme.swww.enable": false,
   "theme.swww.fps": 165,
-  "theme.tmux.enable": false,
-  "theme.tmux.cmd": "tmux set @main_accent \"{hex}\"",
-  "theme.gsettings.enable": true,
   "bar.bold": true,
-  "bar.position": "top",
+  "bar.anchor": "top",
   "bar.corners": "md",
   "bar.transparent": false,
   "bar.layout.start": [
@@ -96,6 +93,29 @@
   "bar.systemIndicators.flat": true,
   "bar.systemIndicators.action": "akir -t quicksettings",
   "bar.systemIndicators.label": "System Indicators",
+  "launcher.anchor": [
+    "top",
+    "center"
+  ],
+  "launcher.width": 35,
+  "launcher.separator": "padded",
+  "launcher.margin": 7,
+  "launcher.app.maxItems": 7,
+  "launcher.app.placeholder": "Search applications...",
+  "launcher.app.icon.size": 4,
+  "launcher.app.icon.monochrome": false,
+  "launcher.cmd.placeholder": "Search commands...",
+  "launcher.cmd.height": 4,
+  "launcher.cmd.maxItems": 10,
+  "powermenu.layout": "1x6",
+  "powermenu.labels": true,
+  "powermenu.iconSize": 6,
+  "powermenu.hibernate": "systemctl hibernate",
+  "powermenu.sleep": "systemctl suspend",
+  "powermenu.reboot": "systemctl reboot",
+  "powermenu.logout": "hyprctl dispatch exit",
+  "powermenu.shutdown": "shutdown now",
+  "powermenu.lockscreen": "swaylock -eF",
   "quicksettings.position": "right",
   "quicksettings.avatar.image": "/var/lib/AccountsService/icons/lucas",
   "quicksettings.avatar.size": 90,
@@ -137,17 +157,43 @@
       "light": "#080808"
     }
   ],
+  "dock.anchor": "bottom",
+  "dock.action": "akir -t drawer",
+  "dock.icon.size": 3.5,
+  "dock.icon.monochrome": false,
+  "dock.display": [
+    "IDEA",
+    "code",
+    "firefox",
+    "telegram",
+    "typora",
+    "Spotify"
+  ],
+  "drawer.rowSize": 11,
+  "drawer.rows": 6,
+  "drawer.solidBackground": false,
+  "drawer.icon.size": 3,
+  "drawer.icon.monochrome": false,
+  "osd.vertical": true,
+  "osd.timeout": 2000,
+  "osd.margin": 0,
+  "osd.slide": true,
+  "osd.anchors": [
+    "top",
+    "right"
+  ],
   "datemenu.position": "center",
   "datemenu.calendar.app": "gnome-calendar",
-  "notifications.position": [
+  "notifications.anchor": [
     "top",
     "right"
   ],
   "notifications.blacklist": [
     "Spotify"
   ],
-  "notifications.width": 25,
+  "notifications.width": 24,
   "notifications.text": "当前没有任何通知",
   "notifications.iconSize": 5,
-  "notifications.maxItems": 10
+  "notifications.maxItems": 10,
+  "notifications.dissmissOnHover": false
 }

@@ -2,18 +2,10 @@
   "audio-card-analog-usb-symbolic": "audio-speakers-symbolic",
   "audio-card-analog-pci-symbolic": "audio-card-symbolic",
   "apifox-symbolic": "api-symbolic",
-  "blueman-manager": "bluetooth-symbolic",
-  "blueman-manager-symbolic": "bluetooth-symbolic",
-  "chromium-symbolic": "chromium-browser-symbolic",
   "fcitx_rime_deploy-symbolic": "input-keyboard-symbolic",
-  "jetbrains-idea-symbolic": "jetbrains-symbolic",
-  "kdeconnect-symbolic": "kde-connect-symbolic",
-  "org.kde.dolphin-symbolic": "explorer-symbolic",
-  "org.kde.polkit-kde-authentication-agent-1-symbolic": "auth-face-symbolic",
-  "org.wezfurlong.wezterm-symbolic": "terminal-symbolic",
-  "pavucontrol-symbolic": "audio-card-symbolic",
+  "jetbrains-idea-symbolic": "idea-symbolic",
+  "org.kde.kdeconnect.app-symbolic": "kde-connect-symbolic",
+  "polkit-gnome-authentication-agent-1-symbolic": "auth-face-symbolic",
   "qq-symbolic": "qchat-symbolic",
-  "steam-symbolic": "steam-client-symbolic",
-  "typora-symbolic": "markdown-symbolic",
-  "code-symbolic": "mvsc-symbolic"
+  "typora-symbolic": "markdown-symbolic"
 }

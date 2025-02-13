@@ -1,6 +1,6 @@
 # Dotfile
 
-> 管理 akir-shell alacritty hyprland ideavim zsh 等常用软件的配置文件
+> 管理 akir-shell wezterm hyprland ideavim zsh 等常用软件的配置文件
 
 ## 配置
 
@@ -39,7 +39,7 @@ yay -S fd eza bat fzf ueberzug lsd git lua
 ### hyprland
 
 ```shell
-yay -S hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-gnome kvantum swaylock-effects xsettingsd fprintd playctrl
+yay -S hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xorg-xrdb dconf dconf-editor pipewire wireplumber cliphist gnome-keyring qt6ct polkit-gnome kvantum swaylock-effects xsettingsd fprintd playerctrl morewaita-icon-theme
 ```
 
 - 依赖说明:
@@ -56,7 +56,8 @@ yay -S hyprland xdg-desktop-portal-hyprland xdg-desktop-portal-gtk xorg-xrdb dco
   10. xsettingsd: xwayland 设置
   11. polkit-gnome: 权限认证组件
   12. fprintd: [指纹认证组件](https://wiki.archlinuxcn.org/zh-sg/Fprint)
-  13. playctrl: 音量调节
+  13. playerctrl: 音量调节
+  14. morewaita-icon-theme: 图标主题
 
 - wayland 下 vscode 登录信息配置 gnome-keyring:
 
