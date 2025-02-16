@@ -1,379 +1,489 @@
-/* hide navbar */
-/*#nav-bar:not([customizing]) {
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1a1b26;
+
+    --urlbar-bg: #0d0d15;
+    --urlbar-border-top: #000;
+    --urldrop-bg: #0d0d15;
+    --urlbar-border-bottom: #404040;
+    --urlbar-height: 30px;
+    --urlbar-outline: #414868;
+
+    --fullscreen-warn: rgb(25, 25, 25);
+
+    --arrowpanel-background: var(--urlbar-bg) !important;
+    --button-hover-bgcolor: rgba(159, 159, 159, 0.35) !important;
+    --button-active-bgcolor: rgba(255, 255, 255, 0.2) !important;
+    --button-bgcolor: rgba(117, 117, 117, 0.9) !important;
+    --toolbarbutton-icon-fill-opacity: 0.8 !important;
+    --arrowpanel-border-color: rgb(55, 55, 55) !important;
+    --identity-btn-hover-color: rgba(117, 117, 117) !important;
+
+    --dark-menu-background-color: rgba(34, 34, 36, 0.5) !important;
+    --dark-menu-border-color: rgb(55, 55, 55) !important;
+    --dark-menuitem-hover-background-color: rgba(159, 159, 159, 0.35) !important;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: #f1f5f9;
+
+    --urlbar-bg: #cbd5e1;
+    --urlbar-border-top: #9ca3af;
+    --urlbar-border-bottom: #fff;
+    --urldrop-bg: #cbd5e1;
+    --urlbar-outline: #94a3b8;
+
+    --fullscreen-warn: rgb(25, 25, 25);
+
+    --arrowpanel-background: #e2e8f0 !important;
+    --button-hover-bgcolor: #9699a3 !important;
+    --button-hover-bgcolor: #cbd5e1 !important;
+    --button-active-bgcolor: #cbd5e1 !important;
+    --identity-btn-hover-color: white !important;
+  }
+}
+
+/* Suppress Connecting/Waiting/Reading/Transerring */
+/* #statuspanel[type="status"] {
+   display: none !important;
+ } */
+/* Suppress Link Destination Overlay */
+/* #statuspanel[type="overLink"] {
+   display: none !important;
+ } */
+
+/* URL BAR */
+#urlbar {
+  border-radius: 30px !important;
+  border: 0 !important;
+}
+
+#urlbar:not(.megabar):not([focused='true']):hover {
+  outline: 1px solid var(--urlbar-outline) !important;
+}
+
+#urlbar[focused='true'] {
+  border: 0 !important;
+  border-top: 1px solid var(--urlbar-border-top) !important;
+  border-bottom: 1px solid var(--urlbar-border-bottom) !important;
+  border-radius: 30px !important;
+}
+
+#urlbar[breakout][breakout-extend] {
+  border: none !important;
+  box-shadow:
+    rgba(0, 0, 0, 0.09) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px,
+    rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px,
+    rgba(0, 0, 0, 0.09) 0px 32px 16px !important;
+  top: calc((var(--urlbar-toolbar-height) - var(--urlbar-height)) / 2) !important;
+  /* left: 0 !important; */
+  /* width: 100% !important; */
+  width: calc(--urlbar-width) !important;
+}
+
+#urlbar-container {
+  margin-top: 3px;
+  display: initial;
+}
+
+#urlbar-background {
+  box-shadow: none !important;
+  border-radius: 30px !important;
+  background: var(--urlbar-bg) !important;
+}
+
+#urlbar[focused='true'] #urlbar-background {
+  box-shadow: inset 1px 1px 1px 0px rgba(0, 0, 0, 0.35) !important;
+  outline: none !important;
+}
+
+#wrapper-urlbar-container #urlbar {
+  height: var(--urlbar-height) !important;
+}
+
+/* Active Address/Search Field Dropdown */
+#urlbar[breakout][breakout-extend] > #urlbar-background {
+  outline: none !important;
+  box-shadow: none !important;
+  background: var(--urldrop-bg) !important;
+  border-radius: 15px !important;
+}
+
+#urlbar[breakout][breakout-extend] > #urlbar-input-container,
+#urlbar-input-container {
+  height: var(--urlbar-height) !important;
+  padding-block: 0px !important;
+  padding-inline: 0px !important;
+  transition: none !important;
+}
+
+/* Idendity icon button */
+#identity-icon-box.identity-box-button {
+  margin: 3px 0 3px 3px;
+  border-radius: 14px !important;
+  background-color: var(--bg) !important;
+  opacity: 0.8;
+}
+
+#identity-icon-box.identity-box-button:hover {
+  cursor: pointer;
+  background-color: var(--identity-btn-hover-color) !important;
+}
+
+/* Track protection icon */
+#tracking-protection-icon-container {
+  border-radius: 16px !important;
+}
+
+#tracking-protection-icon-container:hover {
+  cursor: pointer !important;
+}
+
+/* Star button */
+#star-button-box {
+  border-radius: 16px !important;
+}
+
+#star-button-box {
+  cursor: pointer !important;
+}
+
+/* | Borders | */
+
+.tabbrowser-tab::after {
+  border: 0 !important;
+}
+.titlebar-spacer[type='pre-tabs'] {
+  border: 0 !important;
+}
+#navigator-toolbox {
+  border: 1 !important;
+}
+
+.titlebar-spacer[type='pre-tabs'] {
+  border: 0 !important;
+}
+
+.tabbrowser-tab::after {
+  border: 0 !important;
+}
+
+#urlbar-background {
+  border: 0 !important;
+}
+
+#urlbar[open] > .urlbarView > .urlbarView-body-outer > .urlbarView-body-inner {
+  border-top: 0 !important;
+}
+
+/* Active Tab */
+:root:not([lwt-default-theme-in-dark-mode]) .tab-background[selected],
+.tab-background[multiselected='true'] {
+  background: rgba(0, 0, 0, 0.05) !important;
+}
+
+:root[lwt-default-theme-in-dark-mode] .tab-background[selected],
+.tab-background[multiselected='true'] {
+  background: rgba(0, 0, 0, 0.2) !important;
+}
+
+/* Navigation Bar */
+#nav-bar {
+  background-color: var(--bg) !important;
+}
+
+/* Bookmarks Bar */
+#PersonalToolbar {
+  background-color: var(--bg) !important;
+}
+
+/* Navigation Bar Separator */
+#navigator-toolbox {
+  border-color: var(--bg) !important;
+}
+
+/* Navigation bar Buttons */
+toolbarbutton:hover {
+  cursor: pointer;
+}
+
+/* Show Tab close button on hover */
+.tabbrowser-tab:not([pinned]) .tab-close-button {
+  display: -moz-box !important;
+  opacity: 0;
+  visibility: collapse !important;
+  transition:
+    opacity 0.25s,
+    visibility 0.25s ease-in !important;
+}
+.tabbrowser-tab:not([pinned]):hover .tab-close-button {
+  opacity: 1;
+  visibility: visible !important;
+  border-radius: 3px 3px 3px 3px !important;
+}
+
+/* Show URL buttons on Hover */
+#nav-bar:not([customizing='true']) > #nav-bar-customization-target > #urlbar-container:not(:hover) > #urlbar:not([focused]) > #urlbar-input-container > #page-action-buttons {
+  opacity: 0;
+}
+#page-action-buttons {
+  transition: opacity 0.15s ease;
+}
+#nav-bar:not([customizing='true'])
+  > #nav-bar-customization-target
+  > #urlbar-container:not(:hover)
+  > #urlbar:not([focused])
+  > #urlbar-input-container
+  > #tracking-protection-icon-container {
+  opacity: 0;
+}
+#tracking-protection-icon-container {
+  transition: opacity 0.15s ease;
+}
+
+/*Full Screen Warning*/
+
+#fullscreen-warning {
+  background-color: var(--fullscreen-warn) !important;
+  border-color: var(--fullscreen-warn) !important;
+  max-width: 500px !important;
+  max-height: 50px !important;
+  border-radius: 50px !important;
+  font-size: 12px !important;
+  opacity: 0.8 !important;
+}
+
+.pointerlockfswarning-generic-text,
+.pointerlockfswarning-domain-text {
+  font-size: 15px !important;
+  color: rgb(255, 255, 255) !important;
+  text-shadow: none !important;
+}
+
+/* Uncomment to Hide tabs bar for Tree style tabs (Credit u/jfgxyz on Reddit) */
+toolbar#TabsToolbar {
+  height: 0px;
+  min-height: 0 !important;
+  background-color: var(--bg) !important;
+}
+.toolbar-items {
+  visibility: collapse;
+}
+
+/* ----- Move menu buttons ----- */
+/* :root {
+   --toolbar-start-end-padding: 2px !important;
+} */
+
+#nav-bar #PanelUI-button {
+  -moz-box-ordinal-group: 0 !important;
+}
+
+#nav-bar #PanelUI-button #PanelUI-menu-button {
+  margin-right: 2px !important;
+  margin-left: 2px !important;
+}
+
+/* toolbar:not([customizing]) > #nav-bar-overflow-button {
+   -moz-box-ordinal-group: 1 !important;
+}
+
+toolbar:not([customizing]) > #nav-bar-customization-target {
+   -moz-box-ordinal-group: 2 !important;
+} */
+
+/* ----- Close/min/max fix ----- */
+/* Fix popup position */
+#appMenu-popup {
+  margin-inline: -244px !important;
+}
+
+#nav-bar {
+  padding-left: 0px !important;
+  padding-right: 118px !important;
+  position: static !important;
+}
+
+#navigator-toolbox:not([inFullscreen]) #TabsToolbar .titlebar-buttonbox-container {
+  visibility: visible !important;
+  display: block !important;
+  position: absolute !important;
+  top: 1px !important;
+  left: unset !important;
+  right: 0 !important;
+}
+
+#TabsToolbar .titlebar-min {
+  -moz-box-ordinal-group: 0 !important;
+}
+
+#TabsToolbar .titlebar-max,
+.titlebar-restore {
+  -moz-box-ordinal-group: 1 !important;
+}
+
+#TabsToolbar .titlebar-close {
+  -moz-box-ordinal-group: 2 !important;
+}
+
+#navigator-toolbox[inFullscreen] #navigator-toolbox #TabsToolbar .titlebar-buttonbox-container {
+  -moz-box-ordinal-group: 1 !important;
+}
+
+#navigator-toolbox #TabsToolbar .titlebar-buttonbox-container {
+  -moz-box-ordinal-group: 1 !important;
+}
+
+@media only screen and (max-width: 670px) {
+  #main-window #navigator-toolbox:not([inFullscreen]) #TabsToolbar .titlebar-buttonbox-container {
     visibility: visible !important;
-    margin-top: -40px;
-    transition-delay: 1s;
-    filter: alpha(opacity=0);
-    opacity: 0;
-    transition: visibility ease 0.3s, margin-top ease 0.3s, opacity ease 0.3s !important;
-}
-:root:not([customizing]) :hover > #nav-bar, #nav-bar:focus-within, #identity-box[open="true"], #navigator-toolbox:hover > #nav-bar:not([customizing]), #toolbar-menubar:not([inactive="true"]) ~ #nav-bar:not([customizing]) {
-    visibility: visible !important;
-    margin-top: 0;
-    filter: alpha(opacity=100);
-    opacity: 100;
-}
-#nav-bar .toolbarbutton-1[open="true"] {
-    visibility: visible;
-    margin-top: 0px;
-    opacity: 100;
+    position: relative !important;
+    display: block !important;
+  }
+  #main-window #navigator-toolbox:not([inFullscreen]) #nav-bar {
+    padding-right: initial !important;
+  }
+  #TabsToolbar.browser-toolbar {
+    display: flex !important;
+    justify-content: flex-end !important;
+  }
 }
 
-#navigator-toolbox:not([inFullscreen="true"]) {
-    --tab-min-height: 28px;
-}*/
-
-
-
-:root {
-    /* delay before expanding tabs, set to '0' for no delay */
-    --delay: 0.5s;
-    --transition-time: 0.2s;
-    --positionX1: 48px; /* '48px' for left, '0px' for right sidebar */
-    --positionX2: absolute; /* 'absolute' for left, 'none' for right sidebar */
+#toolbar-menubar {
+  /* menubar bg color */
+  background-color: var(--bg) !important;
 }
 
-/* macOS specific styles */
-@media (-moz-platform: macos) {
-    #TabsToolbar:not([customizing="true"]) {
-        visibility: collapse !important;
-    }
-
-    :root:not([customizing="true"]) #nav-bar:not([inFullscreen]) {
-        padding-left: 80px;
-    }
-
-    :root:not([customizing="true"]) #TabsToolbar .titlebar-buttonbox-container {
-        visibility: visible !important;
-        position: absolute;
-        top: 12px;
-        left: 0px;
-        display: block;
-    }
+/* Line up the Windows controls with the rest of the icons in the toolbar. */
+:root:not([sizemode='maximized']) .titlebar-buttonbox-container {
+  padding-top: 3px;
 }
 
-/* Linux/GTK specific styles */
-@media (-moz-gtk-csd-available) {
-    #TabsToolbar:not([customizing="true"]) {
-        visibility: collapse !important;
-    }
-
-    #toolbar-menubar {
-        padding-top: 0px !important;
-    }
-
-    :root:not([customizing="true"]) #toolbar-menubar[inactive]+#TabsToolbar .titlebar-buttonbox-container {
-        visibility: visible !important;
-        position: absolute;
-        top: var(--uc-win-ctrl-vertical-offset);
-        display: block;
-        z-index: 101;
-    }
-
-    /* enable rounded top corners */
-    :root[tabsintitlebar][sizemode="normal"]:not([gtktiledwindow="true"]):not([customizing="true"]) #nav-bar {
-        border-top-left-radius: env(-moz-gtk-csd-titlebar-radius);
-        border-top-right-radius: env(-moz-gtk-csd-titlebar-radius);
-    }
-
-    /* window control padding values (these don't change the size of the actual buttons, only the padding for the navbar) */
-    :root[tabsintitlebar]:not([customizing="true"]) {
-        /* default button/padding size based on adw-gtk3 theme */
-        --uc-win-ctrl-btn-width: 38px;
-        --uc-win-ctrl-padding: 12px;
-        /* vertical offset from the top of the window, calculation: (1/2 * (NAVBAR_HEIGHT - BUTTON_HEIGHT)) */
-        --uc-win-ctrl-vertical-offset: 8px;
-        /* extra window drag space */
-        --uc-win-ctrl-drag-space: 20px;
-    }
-
-    :root[tabsintitlebar][lwtheme]:not([customizing="true"]) {
-        /* seperate values for when using a theme, based on the Firefox defaults */
-        --uc-win-ctrl-btn-width: 30px;
-        --uc-win-ctrl-padding: 12px;
-        /* vertical offset from the top of the window, calculation: (1/2 * (NAVBAR_HEIGHT - BUTTON_HEIGHT)) */
-        --uc-win-ctrl-vertical-offset: 5px;
-        /* extra window drag space */
-        --uc-win-ctrl-drag-space: 20px;
-    }
-
-    /* setting the padding value for all button combinations */
-    @media (-moz-gtk-csd-minimize-button),
-    (-moz-gtk-csd-maximize-button),
-    (-moz-gtk-csd-close-button) {
-        #nav-bar {
-            --uc-navbar-padding: calc(var(--uc-win-ctrl-btn-width) * 1);
-        }
-    }
-
-    @media (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button),
-    (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-close-button),
-    (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
-        #nav-bar {
-            --uc-navbar-padding: calc(var(--uc-win-ctrl-btn-width) * 2);
-        }
-    }
-
-    @media (-moz-gtk-csd-minimize-button) and (-moz-gtk-csd-maximize-button) and (-moz-gtk-csd-close-button) {
-        #nav-bar {
-            --uc-navbar-padding: calc(var(--uc-win-ctrl-btn-width) * 3);
-        }
-    }
-
-    /* only applies padding/positioning if there is 1 or more buttons */
-    @media (-moz-gtk-csd-minimize-button),
-    (-moz-gtk-csd-maximize-button),
-    (-moz-gtk-csd-close-button) {
-        /* window controls on the right */
-        @media not (-moz-gtk-csd-reversed-placement) {
-            #nav-bar {
-                padding-inline: 0 calc(var(--uc-navbar-padding, 0) + var(--uc-win-ctrl-padding) + var(--uc-win-ctrl-drag-space)) !important;
-            }
-
-            .titlebar-buttonbox-container {
-                right: 0;
-            }
-        }
-
-        /* window controls on the left */
-        @media (-moz-gtk-csd-reversed-placement) {
-            #nav-bar {
-                padding-inline: calc(var(--uc-navbar-padding, 0) + var(--uc-win-ctrl-padding) + var(--uc-win-ctrl-drag-space)) 0 !important;
-            }
-
-            .titlebar-buttonbox-container {
-                left: 0;
-            }
-        }
-    }
-
-    /* Hide window buttons in fullscreen */
-    #navigator-toolbox[style*="margin-top: -"] .titlebar-buttonbox-container,
-    [inDOMFullscreen="true"] .titlebar-buttonbox-container {
-        transform: translateY(-100px)
-    }
-
-
+.titlebar-buttonbox {
+  z-index: 3 !important;
+  padding-right: 3px;
 }
 
-/* Windows specific styles */
-@media (-moz-platform: windows-win10) {
-    /* Hide main tabs toolbar */
-    :root[tabsintitlebar]{
-        --uc-window-control-width: 137px; /* Space at the right of nav-bar for window controls */
-        /* --uc-window-drag-space-width: 24px; */  /* To add extra window drag space in nav-bar */
-    }
-
-    #nav-bar{
-        border-inline: var(--uc-window-drag-space-width,80px) solid var(--toolbar-bgcolor) ;
-        border-inline-style: solid !important;
-        border-right-width: calc(var(--uc-window-control-width,0px) + var(--uc-window-drag-space-width,0px));
-
-        padding-top: .5px !important; /* This makes it possible to drag the maximized window. */
-        margin-left: -80px; /* Removes the space left when hiding .titlebar-buttonbox-container */
-    }
-
-    #back-button {
-		margin-top: -.5px !important;
-	}
-
-	#forward-button {
-		margin-top: -.5px !important;
-	}
-
-	#reload-button {
-		margin-top: -.5px !important;
-	}
-
-	#PanelUI-button {
-		margin-top: -.5px !important;
-	}
-
-	#nav-bar-overflow-button{
-		margin-top: -.5px !important;
-	}
-
-    :root {
-        --uc-toolbar-height: 32px;
-        --chrome-content-separator-color: none !important;
-    }
-
-    :root:not([uidensity="compact"]) {
-        --uc-toolbar-height: 38px;
-    }
-
-    #TabsToolbar {
-        visibility: collapse !important;
-    }
-
-    /* Hide the Windows controls on the left side. */
-    #TabsToolbar .titlebar-buttonbox-container {
-        visibility: hidden !important;
-    }
-    /* Line up the Windows controls with the rest of the icons in the toolbar. */
-    .titlebar-buttonbox-container {
-        margin-top: 3px;
-    }
-
-
-    :root:not([inFullscreen]) #nav-bar {
-        margin-top: calc(0px - var(--uc-toolbar-height));
-        z-index: 2;
-    }
-
-    #toolbar-menubar {
-        min-height: unset !important;
-        height: var(--uc-toolbar-height) !important;
-        position: relative;
-    }
-
-    /* For a rounded button design, uncomment both lines in .titlebar-buttonbox. */
-    .titlebar-buttonbox {
-        z-index:3 !important;
-        /* padding-right:3px; */
-    }
-
-    .titlebar-buttonbox * {
-        /* border-radius: 5px; */
-        width:35px;
-        height:38px;
-    }
-
-    #main-menubar {
-        -moz-box-flex: 1;
-        background-color: var(--toolbar-bgcolor,--toolbar-non-lwt-bgcolor);
-        background-clip: padding-box;
-        border-right: 30px solid transparent;
-        border-image: linear-gradient(to left, transparent, var(--toolbar-bgcolor,--toolbar-non-lwt-bgcolor) 30px) 20 / 30px;
-    }
-
-    #toolbar-menubar:not([inactive]) {
-        z-index: 2;
-    }
-
-    #toolbar-menubar[inactive] > #menubar-items {
-        opacity: 0;
-        pointer-events: none;
-        margin-left: var(--uc-window-drag-space-width,0px);
-    }
-
-    :root[inFullscreen] #nav-bar {
-        border-inline: none !important;
-    }
+.titlebar-buttonbox * {
+  border-radius: 5px;
+  width: 35px;
+  height: 38px;
 }
 
+/* SIDEBERY */
 
-/* General styles */
-#browser {
-    position: relative;
+/* hides the sidebar header */
+#sidebar-header {
+  display: none !important;
 }
 
-#nav-bar, #urlbar {
-    z-index: 100;
+.tab[selected='true'] {
+  visibility: collapse;
+  height: 0px;
 }
 
-#sidebar-box:not([lwt-sidebar]){
-    appearance: unset !important;
+.tabbrowser-tab {
+  visibility: collapse;
+  height: 0px;
 }
 
-#sidebar-box[sidebarcommand*="tabcenter"] {
-    z-index: 1;
+.tabbrowser-tab[visuallyselected='true'] {
+  visibility: collapse;
+  height: 0px;
 }
 
-#sidebar-box[sidebarcommand*="tabcenter"] #sidebar-header {
-    visibility: collapse;
-    display: none;
+/* AUTO HIDE SIDE BAR */
+
+#sidebar-box {
+  --uc-sidebar-width: 44px;
+  --uc-sidebar-hover-width: 260px;
+  --uc-autohide-sidebar-delay: 1ms; /* Waiting time before hiding sidebar */
+  position: relative;
+  min-width: var(--uc-sidebar-width) !important;
+  width: var(--uc-sidebar-width) !important;
+  max-width: var(--uc-sidebar-width) !important;
+  z-index: 100;
 }
 
-[sidebarcommand*="tabcenter"] #sidebar,
-#sidebar-box[sidebarcommand*="tabcenter"] {
-    min-width: 48px !important;
-    max-width: 48px !important;
-    width: 48px;
+:root[BookmarksToolbarOverlapsBrowser] #sidebar-box {
+  padding-top: 0 !important;
+  top: var(--bookmarks-toolbar-overlapping-browser-height);
 }
 
-#sidebar-box[sidebarcommand*="tabcenter"]:not([hidden]) {
-    display: block;
-    position: var(--positionX2);
-    box-sizing: content-box;
-    min-width: 48px;
-    max-width: 48px;
-    overflow: hidden;
-    border-right: 1px solid var(--sidebar-border-color);
-    z-index: 1;
-    top: 0;
-    bottom: 0;
+#sidebar-box[positionend] {
+  direction: rtl;
+}
+#sidebar-box[positionend] > * {
+  direction: ltr;
 }
 
-#main-window[inFullscreen] #sidebar-box[sidebarcommand*="tabcenter"]:not([hidden]) {
-    min-width: 1px;
-    max-width: 1px;
+#sidebar-box[positionend]:-moz-locale-dir(rtl) {
+  direction: ltr;
+}
+#sidebar-box[positionend]:-moz-locale-dir(rtl) > * {
+  direction: rtl;
 }
 
-#sidebar-box[sidebarcommand*="tabcenter"]:hover #sidebar,
-#sidebar-box[sidebarcommand*="tabcenter"]:hover {
-    min-width: 10vw !important;
-    width: 30vw !important;
-    max-width: 200px !important;
-    z-index: 1 !important;
-    transition: all var(--transition-time) ease var(--delay);
+/* HIDE SIDE BAR IN FULL SCREEN */
+#main-window[inFullscreen='true'] #sidebar-box {
+  --uc-sidebar-width: 0px;
 }
 
-/* used for delay function */
-#sidebar-box[sidebarcommand*="tabcenter"]:not(:hover) #sidebar,
-#sidebar-box[sidebarcommand*="tabcenter"]:not(:hover) {
-    transition: all var(--transition-time) ease 0s;
+#sidebar-splitter {
+  display: none;
 }
 
-@media (width >= 1200px) {
-    #sidebar-box[sidebarcommand*="tabcenter"]:hover #sidebar,
-    #sidebar-box[sidebarcommand*="tabcenter"]:hover {
-        max-width: 250px !important;
-    }
+#sidebar-header {
+  overflow: hidden;
+  color: var(--bg) !important;
 }
 
-[sidebarcommand*="tabcenter"] ~ #sidebar-splitter {
-    display: none;
+#sidebar {
+  transition: min-width 115ms linear var(--uc-autohide-sidebar-delay) !important;
+  min-width: var(--uc-sidebar-width) !important;
+  will-change: min-width;
 }
 
-[sidebarcommand*="tabcenter"] #sidebar {
-    max-height: 100%;
-    height: 100%;
+#sidebar-box:hover > #sidebar {
+  min-width: var(--uc-sidebar-hover-width) !important;
+  transition-delay: 0ms !important;
 }
 
-#main-window:not([inFullscreen]) #sidebar-box[sidebarcommand*="tabcenter"]:not([hidden]) ~ #appcontent {
-    margin-left: var(--positionX1);
+.sidebar-panel {
+  background-color: transparent !important;
+  color: var(--newtab-text-primary-color) !important;
 }
 
-#main-window[inFullscreen][inDOMFullscreen] #appcontent {
-    margin-left: 0;
+.sidebar-panel #search-box {
+  -moz-appearance: none !important;
+  background-color: rgba(249, 249, 250, 0.1) !important;
+  color: inherit !important;
 }
 
-#main-window[inFullscreen] #sidebar {
-    height: 100vh;
+/* Add sidebar divider and give it background */
+
+#sidebar,
+#sidebar-header {
+  background-color: inherit !important;
+  /* 	border-inline: 1px solid rgb(80, 80, 80); */
+  border-inline-width: 0px 1px;
 }
 
-[sidebarcommand*="tabcenter"] #sidebar-header {
-    background: #0C0C0D;
-    border-bottom: none !important;
+#sidebar-box:not([positionend]) > :-moz-locale-dir(rtl),
+#sidebar-box[positionend] > * {
+  border-inline-width: 1px 0px;
 }
 
-[sidebarcommand*="tabcenter"] ~ #sidebar-splitter {
-    border-right-color: #0C0C0D !important;
-    border-left-color: #0C0C0D !important;
+/* Move statuspanel to the other side when sidebar is hovered so it doesn't get covered by sidebar */
+
+#sidebar-box:not([positionend]):hover ~ #appcontent #statuspanel {
+  inset-inline: auto 0px !important;
 }
-
-[sidebarcommand*="tabcenter"] #sidebar-switcher-target,
-[sidebarcommand*="tabcenter"] #sidebar-close {
-    filter: invert(100%);
-}
-
-@media (max-width: 630px) {
-    #urlbar-container {
-        min-width: 100% !important;
-    }
-
-    #menubar-items {
-        display: none !important;
-    }
+#sidebar-box:not([positionend]):hover ~ #appcontent #statuspanel-label {
+  margin-inline: 0px !important;
+  border-left-style: solid !important;
 }

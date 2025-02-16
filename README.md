@@ -183,6 +183,7 @@ ln -s $PWD/fcitx5/themes ~/.local/share/fcitx5/themes
 4. 双击toolkit.legacyUserProfileCustomizations.stylesheets 将其修改为: true
 5. 点击: ☰ -> [帮助] -> [更多排障信息], 找到[配置文件夹]选项, 复制文件夹路径
 6. 终端执行: `ln -s $PWD/chrome '复制的路径/chrome'`
+7. 插件主题配置: [Here](https://github.com/christorange/VerticalFox)
 
 ### steam 使用兼容模式运行的游戏 `Couldn’t switch to requested monitor resolution`
 
