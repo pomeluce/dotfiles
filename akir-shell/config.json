@@ -28,32 +28,17 @@
   "theme.hyprland.inactiveBorder.dark": "#282828",
   "theme.hyprland.inactiveBorder.light": "#181818",
   "theme.hyprland.gapsMultiplier": 1.7,
-  "theme.swww.enable": false,
+  "theme.swww.enable": true,
   "theme.swww.fps": 165,
+  "theme.swww.wp": "/home/lucas/.config/wallpapers",
+  "theme.swww.interval": 300,
   "bar.bold": true,
   "bar.anchor": "top",
   "bar.corners": "md",
   "bar.transparent": false,
-  "bar.layout.start": [
-    "launcher",
-    "workspaces",
-    "taskbar",
-    "spacer",
-    "messages"
-  ],
-  "bar.layout.center": [
-    "date"
-  ],
-  "bar.layout.end": [
-    "media",
-    "spacer",
-    "systray",
-    "colorpicker",
-    "screenrecord",
-    "system",
-    "battery",
-    "powermenu"
-  ],
+  "bar.layout.start": ["launcher", "workspaces", "taskbar", "spacer", "messages"],
+  "bar.layout.center": ["date"],
+  "bar.layout.end": ["media", "spacer", "systray", "colorpicker", "screenrecord", "system", "battery", "powermenu"],
   "bar.launcher.suggested": false,
   "bar.launcher.flat": true,
   "bar.launcher.icon": "archlinux-logo",
@@ -80,10 +65,7 @@
   "bar.colorpicker.maxItems": 10,
   "bar.colorpicker.label": "Color Picker",
   "bar.systray.flat": true,
-  "bar.systray.ignore": [
-    "KDE Connect Indicator",
-    "spotify-client"
-  ],
+  "bar.systray.ignore": ["KDE Connect Indicator", "spotify-client"],
   "bar.media.flat": true,
   "bar.media.monochrome": true,
   "bar.media.preferred": "spotify",
@@ -97,10 +79,7 @@
   "bar.systemIndicators.flat": true,
   "bar.systemIndicators.action": "akir -t quicksettings",
   "bar.systemIndicators.label": "System Indicators",
-  "launcher.anchor": [
-    "top",
-    "center"
-  ],
+  "launcher.anchor": ["top", "center"],
   "launcher.width": 35,
   "launcher.separator": "padded",
   "launcher.margin": 7,
@@ -168,14 +147,7 @@
   "dock.action": "akir -t drawer",
   "dock.icon.size": 3.5,
   "dock.icon.monochrome": false,
-  "dock.display": [
-    "IDEA",
-    "code",
-    "firefox",
-    "telegram",
-    "typora",
-    "Spotify"
-  ],
+  "dock.display": ["IDEA", "code", "firefox", "telegram", "typora", "Spotify"],
   "drawer.rowSize": 11,
   "drawer.rows": 6,
   "drawer.solidBackground": false,
@@ -185,19 +157,11 @@
   "osd.timeout": 2000,
   "osd.margin": 0,
   "osd.slide": true,
-  "osd.anchors": [
-    "top",
-    "right"
-  ],
+  "osd.anchors": ["top", "right"],
   "datemenu.position": "center",
   "datemenu.calendar.app": "gnome-calendar",
-  "notifications.anchor": [
-    "top",
-    "right"
-  ],
-  "notifications.blacklist": [
-    "Spotify"
-  ],
+  "notifications.anchor": ["top", "right"],
+  "notifications.blacklist": ["Spotify"],
   "notifications.width": 24,
   "notifications.text": "当前没有任何通知",
   "notifications.iconSize": 5,
