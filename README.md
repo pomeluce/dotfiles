@@ -106,9 +106,11 @@ vscode 配置文件(~/.vscode/argv.json) 配置 "password-store": "gnome-libsecr
 
 - NIVDIA 配置
 
-  1.  设置双显卡为独显输出模式
-  2.  安装显卡驱动
-  3.  配置参考: [Hyprland#NVIDIA](https://wiki.hyprland.org/Nvidia/)
+  <!-- 1.  设置双显卡为独显输出模式 -->
+  <!-- 2.  安装显卡驱动 -->
+  <!-- 3.  配置参考: [Hyprland#NVIDIA](https://wiki.hyprland.org/Nvidia/) -->
+
+  参考 [Bumblebee](https://wiki.archlinuxcn.org/wiki/Bumblebee)
 
 ### astal
 
