@@ -1,10 +1,14 @@
+# dev root dir
+export DEVROOT=~/devroot
+
 # setting jetBrains ide runtime
-export IDEA_JDK=/env/jdk/jbr
-export PYCHARM_JDK=/env/jdk/jbr
-export GOLAND_JDK=/env/jdk/jbr
-export CLION_JDK=/env/jdk/jbr
-export WEBIDE_JDK=/env/jdk/jbr
-export DATAGRIP_JDK=/env/jdk/jbr
+JBR_HOME=$DEVROOT/env/jdk/jbr
+export IDEA_JDK=$JBR_HOME
+export PYCHARM_JDK=$JBR_HOME
+export GOLAND_JDK=$JBR_HOME
+export CLION_JDK=$JBR_HOME
+export WEBIDE_JDK=$JBR_HOME
+export DATAGRIP_JDK=$JBR_HOME
 
 # setting java environment
 export JAVA_HOME8=/usr/lib/jvm/zulu-8
@@ -16,22 +20,22 @@ export PATH=$JAVA_HOME/bin:$PATH
 export PYTHON=$(which python3)
 
 # setting gradle repostiory
-export GRADLE_USER_HOME=/env/gradle
+export GRADLE_USER_HOME=$DEVROOT/env/gradle
 
 # setting golang environment
-export GOPATH=/env/golib
+export GOPATH=$DEVROOT/env/golib
 export GOBIN=~/.cache/go-bin
 
 # setting pnpm environment
-export PNPM_HOME=/env/node/pnpm/bin
+export PNPM_HOME=$DEVROOT/env/node/pnpm/bin
 export PATH=$PNPM_HOME:$PATH
 
 # setting nvm environment
-export NVM_DIR=/env/node/nvm
+export NVM_DIR=$DEVROOT/env/node/nvm
 
 # setting rust environment
-export RUSTUP_HOME=/env/rust/rustup
-export CARGO_HOME=/env/rust/cargo
+export RUSTUP_HOME=$DEVROOT/env/rust/rustup
+export CARGO_HOME=$DEVROOT/env/rust/cargo
 
 # setting user bin environment
 export PATH=~/.local/bin:$PATH
